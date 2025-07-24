@@ -7,6 +7,9 @@ caches:
   images: 
     dir: :cacheDir/images
 
+# Add your Google Analytics ID here
+googleAnalytics: G-CK963X68CX
+
 params:
   # homeInfoParams:
   #   Title: "Hi Sweety"
