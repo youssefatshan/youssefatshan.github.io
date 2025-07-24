@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tailwind CSS on Youzarsifya7</title>
+    <link>http://localhost:1313/tags/tailwind-css/</link>
+    <description>Recent content in Tailwind CSS on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jul 2025 11:20:03 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tailwind-css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber Moon: A Fictional Tech Startup Prototype</title>
+      <link>http://localhost:1313/content/projects/ya7-project-prototype-012/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/content/projects/ya7-project-prototype-012/</guid>
+      <description>A responsive prototype for a fictional tech startup, showcasing component-based architecture with Next.js, responsive design with Tailwind CSS, and elegant scroll-based animations.</description>
+    </item>
+    <item>
+      <title>Royal Platinum: Financial Services UI/UX Website</title>
+      <link>http://localhost:1313/content/projects/ya7-project-company-02/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content/projects/ya7-project-company-02/</guid>
+      <description>A sleek and modern UI/UX Website for a financial services company, built with React.js and Tailwind CSS to translate a Figma design into a pixel-perfect, responsive website.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Brushstrokes: Skin-Care Products Store Prototype | Youzarsifya7</title>
+<meta name="keywords" content="React, CSS, JavaScript, HTML, JSON, UI/UX">
+<meta name="description" content="A responsive e-commerce prototype for a skin-care brand, built with React.js. Features product listings and detail pages populated from a JSON data source.">
+<meta name="author" content="Youssef Atshan">
+<link rel="canonical" href="http://localhost:1313/content/projects/ya7-project-prototype-01/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css" integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/content/projects/ya7-project-prototype-01/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/content/projects/ya7-project-prototype-01/">
+  <meta property="og:site_name" content="Youzarsifya7">
+  <meta property="og:title" content="Brushstrokes: Skin-Care Products Store Prototype">
+  <meta property="og:description" content="A responsive e-commerce prototype for a skin-care brand, built with React.js. Features product listings and detail pages populated from a JSON data source.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="content">
+    <meta property="article:published_time" content="2023-01-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-01-31T00:00:00+00:00">
+    <meta property="article:tag" content="React">
+    <meta property="article:tag" content="CSS">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="HTML">
+    <meta property="article:tag" content="JSON">
+    <meta property="article:tag" content="UI/UX">
+    <meta property="og:image" content="http://localhost:1313/images/projects/Brushstorkes_Cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/projects/Brushstorkes_Cover.png">
+<meta name="twitter:title" content="Brushstrokes: Skin-Care Products Store Prototype">
+<meta name="twitter:description" content="A responsive e-commerce prototype for a skin-care brand, built with React.js. Features product listings and detail pages populated from a JSON data source.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Contents",
+      "item": "http://localhost:1313/content/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "My Projects",
+      "item": "http://localhost:1313/content/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Brushstrokes: Skin-Care Products Store Prototype",
+      "item": "http://localhost:1313/content/projects/ya7-project-prototype-01/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Brushstrokes: Skin-Care Products Store Prototype",
+  "name": "Brushstrokes: Skin-Care Products Store Prototype",
+  "description": "A responsive e-commerce prototype for a skin-care brand, built with React.js. Features product listings and detail pages populated from a JSON data source.",
+  "keywords": [
+    "React", "CSS", "JavaScript", "HTML", "JSON", "UI/UX"
+  ],
+  "articleBody": "Brushstrokes is a fully responsive e-commerce prototype designed for a premium skin-care brand. Developed from scratch, this static website showcases a clean and elegant storefront, featuring product listings and detailed product pages to create a complete and intuitive shopping experience.\n🛠️ Tech Stack Core Library: React.js Styling: Custom CSS3 Data Handling: JSON Markup: HTML5 Language: JavaScript (ES6+) ✨ Key Features 🛍️ E-commerce UI: Features essential e-commerce components, including product listing grids and detailed product view pages. 📄 JSON-Powered Content: Product information (names, prices, descriptions) is dynamically loaded from a local JSON file, demonstrating static data management in a React application. 📱 Fully Responsive: Meticulously styled to ensure a seamless experience across all devices, from large desktops to mobile phones. 🎨 Custom Design: The entire UI/UX was designed and developed from the ground up, creating a unique and compelling brand identity for the store. 💨 Dynamic Animations: Subtle animations and transitions were implemented with CSS to enhance user engagement and provide a polished, modern feel. 💡 Project Goal The primary objective of this project was to build a functional and visually appealing prototype of a skin-care e-commerce website. It demonstrates the ability to structure and develop a React application that handles product data locally, while focusing on a high-quality, responsive user interface to optimize the customer shopping experience.\n🚀 View the Project Live Website: brushstrokes.surge.sh Source Code: GitHub Repository ",
+  "wordCount" : "228",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/images/projects/Brushstorkes_Cover.png","datePublished": "2023-01-31T00:00:00Z",
+  "dateModified": "2023-01-31T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Youssef Atshan"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/content/projects/ya7-project-prototype-01/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Youzarsifya7",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Youzarsifya7 (Alt + H)">Youzarsifya7</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Brushstrokes: Skin-Care Products Store Prototype
+    </h1>
+    <div class="post-meta"><span title='2023-01-31 00:00:00 +0000 UTC'>January 31, 2023</span>&nbsp;·&nbsp;Youssef Atshan
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/projects/Brushstorkes_Cover.png" alt="Homepage of the Brushstrokes skin-care website">
+        <figcaption>The landing page for the Brushstrokes prototype.</figcaption>
+</figure>
+  <div class="post-content"><p>Brushstrokes is a fully responsive e-commerce prototype designed for a premium skin-care brand. Developed from scratch, this static website showcases a clean and elegant storefront, featuring product listings and detailed product pages to create a complete and intuitive shopping experience.</p>
+<h2 id="-tech-stack">🛠️ Tech Stack<a hidden class="anchor" aria-hidden="true" href="#-tech-stack">#</a></h2>
+<ul>
+<li><strong>Core Library:</strong> React.js</li>
+<li><strong>Styling:</strong> Custom CSS3</li>
+<li><strong>Data Handling:</strong> JSON</li>
+<li><strong>Markup:</strong> HTML5</li>
+<li><strong>Language:</strong> JavaScript (ES6+)</li>
+</ul>
+<h2 id="-key-features">✨ Key Features<a hidden class="anchor" aria-hidden="true" href="#-key-features">#</a></h2>
+<ul>
+<li><strong>🛍️ E-commerce UI:</strong> Features essential e-commerce components, including product listing grids and detailed product view pages.</li>
+<li><strong>📄 JSON-Powered Content:</strong> Product information (names, prices, descriptions) is dynamically loaded from a local JSON file, demonstrating static data management in a React application.</li>
+<li><strong>📱 Fully Responsive:</strong> Meticulously styled to ensure a seamless experience across all devices, from large desktops to mobile phones.</li>
+<li><strong>🎨 Custom Design:</strong> The entire UI/UX was designed and developed from the ground up, creating a unique and compelling brand identity for the store.</li>
+<li><strong>💨 Dynamic Animations:</strong> Subtle animations and transitions were implemented with CSS to enhance user engagement and provide a polished, modern feel.</li>
+</ul>
+<h2 id="-project-goal">💡 Project Goal<a hidden class="anchor" aria-hidden="true" href="#-project-goal">#</a></h2>
+<p>The primary objective of this project was to build a functional and visually appealing prototype of a skin-care e-commerce website. It demonstrates the ability to structure and develop a React application that handles product data locally, while focusing on a high-quality, responsive user interface to optimize the customer shopping experience.</p>
+<hr>
+<h2 id="-view-the-project">🚀 View the Project<a hidden class="anchor" aria-hidden="true" href="#-view-the-project">#</a></h2>
+<ul>
+<li><strong>Live Website:</strong> <a href="https://brushstrokes.surge.sh">brushstrokes.surge.sh</a></li>
+<li><strong>Source Code:</strong> <a href="https://github.com/youssefatshan/Brushstrokes">GitHub Repository</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/react/">React</a></li>
+      <li><a href="http://localhost:1313/tags/css/">CSS</a></li>
+      <li><a href="http://localhost:1313/tags/javascript/">JavaScript</a></li>
+      <li><a href="http://localhost:1313/tags/html/">HTML</a></li>
+      <li><a href="http://localhost:1313/tags/json/">JSON</a></li>
+      <li><a href="http://localhost:1313/tags/ui/ux/">UI/UX</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Youzarsifya7</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

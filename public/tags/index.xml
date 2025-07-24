@@ -1,11 +1,159 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on Youzarsifya7</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jul 2025 11:20:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AOS</title>
+      <link>http://localhost:1313/tags/aos/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>http://localhost:1313/tags/frontend/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Next.js</title>
+      <link>http://localhost:1313/tags/next.js/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/next.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>http://localhost:1313/tags/react/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tailwind CSS</title>
+      <link>http://localhost:1313/tags/tailwind-css/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tailwind-css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UI/UX</title>
+      <link>http://localhost:1313/tags/ui/ux/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ui/ux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vercel</title>
+      <link>http://localhost:1313/tags/vercel/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vercel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NextJS</title>
+      <link>http://localhost:1313/tags/nextjs/</link>
+      <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>
+      <guid>http://localhost:1313/tags/nextjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSS3</title>
+      <link>http://localhost:1313/tags/css3/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/css3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React Router</title>
+      <link>http://localhost:1313/tags/react-router/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/react-router/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React Spring</title>
+      <link>http://localhost:1313/tags/react-spring/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/react-spring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vite</title>
+      <link>http://localhost:1313/tags/vite/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web3Forms</title>
+      <link>http://localhost:1313/tags/web3forms/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/web3forms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Figma</title>
+      <link>http://localhost:1313/tags/figma/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/figma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSS</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Leaflet.js</title>
+      <link>http://localhost:1313/tags/leaflet.js/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/leaflet.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Netlify</title>
+      <link>http://localhost:1313/tags/netlify/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/netlify/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reactstrap</title>
+      <link>http://localhost:1313/tags/reactstrap/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reactstrap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTML</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JSON</title>
+      <link>http://localhost:1313/tags/json/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/json/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

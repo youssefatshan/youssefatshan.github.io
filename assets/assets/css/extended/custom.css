@@ -1,0 +1,240 @@
+/* --- Spinner Portrait Effect --- */
+
+/* This is the main container that holds the portrait and spinner.
+   It controls the overall size and positioning. */
+.portrait-container {
+  /* Remove fixed size, let Hugo inline style handle it */
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+}
+
+/* This is the rotating border element. */
+.spinner {
+  width: 100%;
+  height: 100%;
+  /* This creates a two-color border. One half is dark gray... */
+  border: 0.5em solid #b8860b;
+  /* ...and the other half uses your theme's primary color for perfect integration. */
+  border-right-color: var(--primary);
+  border-bottom-color: var(--primary);
+  border-radius: 50%; /* Makes it a perfect circle */
+  /* This tells the browser to smoothly animate any changes to the 'transform' property. */
+  transition: transform 0.8s ease-in-out;
+}
+
+/* This is the div that holds your actual profile picture. */
+.portrait-img {
+  position: absolute;
+  /* These values center the image perfectly inside the spinner's border. */
+  top: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  /* Your image is applied as a background. */
+  background-position: center;
+  background-size: cover; /* This ensures the image fills the circle without distortion. */
+  border-radius: 50%; /* Makes the image a perfect circle. */
+}
+
+/* This is the animation trigger.
+   When you hover over the main container, it targets the spinner and rotates it. */
+.portrait-container:hover .spinner {
+  transform: rotate(180deg);
+}
+
+/* --- Responsive adjustments for smaller screens --- */
+@media screen and (max-width: 768px) {
+  .portrait-container {
+    width: 10rem !important;  /* 160px */
+    height: 10rem !important;
+  }
+
+  .spinner {
+    width: 100% !important;
+    height: 100% !important;
+    border-width: 0.4em !important;
+  }
+
+  .portrait-img {
+    top: 0.4em !important;
+    bottom: 0.4em !important;
+    left: 0.4em !important;
+    right: 0.4em !important;
+  }
+}
+/* --- ENDED: Spinner Portrait Effect --- */
+
+/* --- Custom Project Grid Layout --- */
+
+/* The main container for the grid */
+.project-grid-container {
+  display: grid;
+  /* This creates two equal-width columns */
+  grid-template-columns: repeat(2, 1fr); 
+  /* This sets the space between the cards */
+  gap: 1.5rem; 
+}
+
+/* Styling for a single project card */
+.project-card {
+  display: block;
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-border-radius);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--primary);
+  overflow: hidden; /* Ensures the image corners are rounded */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-image-container {
+  width: 100%;
+  /* Creates a 16:9 aspect ratio for the image */
+  aspect-ratio: 16 / 9; 
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; This crops the image */
+  /* object-fit: contain; This shows the full image */
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-summary {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.card-footer {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+/* --- START: Added Card Button Styles --- */
+
+/* This ensures the card footer is pushed to the bottom */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* A wrapper for the top link */
+.card-top-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* The footer that holds the buttons */
+.card-footer {
+  padding: 0 1rem 1rem 1rem;
+  margin-top: auto;
+}
+
+/* This container aligns the buttons to the right */
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* Base style for ALL buttons */
+.card-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none; /* No border */
+  border-radius: 9999px; /* This creates the pill shape */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Style for secondary buttons (Website, GitHub) */
+.card-btn {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+}
+
+.card-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* Special style for the primary "Details" button */
+.details-btn {
+  background-color: var(--primary);
+  color: var(--primary-background);
+}
+
+.details-btn:hover {
+  filter: brightness(1.15);
+}
+
+/* --- END: Added Card Button Styles --- */
+
+/* --- Responsive Layout --- */
+
+/* When the screen is 768px wide or less, switch to a single column */
+@media (max-width: 768px) {
+  .project-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Social Icons --- */
+.contacts {
+  margin: 2.2rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+  .contact {
+    display: inline-block;
+    width: 2.2em;
+    height: 2.2em;
+    line-height: 2.2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    background: #f9f9fb;
+    border-radius: 100%;
+    color: #535358;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+.contact:hover {
+    background: #b8860b;
+    color: #fff;
+    box-shadow: 0 0 1px 7px rgba(182, 38, 44, 0.15);
+    position: relative;
+}
+
+/* --- Custom Font Integration --- */
+
+/* Set the default body font to 'Jura', like in the awesome-identity theme */
+body {
+    font-family: 'Jura', sans-serif;
+}
+
+/* Set the font for all headings and post titles to 'Roboto' */
+h1, h2, h3, h4, h5, h6, .post-title {
+    font-family: 'Roboto', sans-serif;
+}

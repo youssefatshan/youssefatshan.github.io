@@ -1,7 +1,70 @@
-baseURL: https://example.org/
+baseURL: "https://youssefatshan.github.io/"
 languageCode: en-us
-title: My New Hugo Site
-theme: "PaperMod"
+title: Youzarsifya7
+theme: ["PaperMod"]
+
+params:
+  # homeInfoParams:
+  #   Title: "Hi Sweety"
+  #   Content: Welcome to my website, where I share my thoughts and experiences on various topics. Feel free to explore and connect with me!
+  # --- For metadata ---
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio, Web Developer]
+  author: Youssef Atshan
+  # dateFormat: "January 2, 2006 at 3:04 PM"
+  # --------------
+  #Home Page
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Youssef Atshan"
+    subtitle: "Web Developer / ICT Engineer \U0001F44B"
+    imageUrl: "images/youzarsif-profile-img.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: Developer #Appear on hover
+    bio: "I’m a passionate full-stack web developer and ICT engineer with strong experience in React.js, Node.js, and telecom solutions. I love building scalable digital products and solving real-world challenges with clean code."
+    # buttons:
+    #   - name: "Hire Me on Fiverr"
+    #     url: "https://www.fiverr.com/" # Replace with your Fiverr profile URL
+    #   - name: "Hire Me on Freelancer"
+    #     url: "https://www.freelancer.com/" # Replace with your Freelancer profile URL
+        
+  socialIcons:
+    - name: github
+      url: "https://github.com/youssefatshan"
+    - name: facebook
+      url: "https://facebook.com/YouzarsifYA7"
+    - name: telegram
+      url: "https://t.me/Youzarsif_YA7"
+    - name: linkedin
+      url: "https://linkedin.com/in/youzarsifya7"
+    - name: x
+      url: "https://x.com/youzarsifya7"
+
+menu:
+  main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 5
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 6
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/   
+      weight: 30
 
 caches: 
   images: 

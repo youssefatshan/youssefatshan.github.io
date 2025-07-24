@@ -1,0 +1,39 @@
+{{/* The main container for the card is now a div, not a link. */}}
+<div class="project-card">
+  
+  {{/* The top part of the card (image and title) now links to the details page */}}
+  <a href="{{ .Permalink }}" class="card-top-link">
+    {{- with .Params.cover -}}
+    <div class="card-image-container">
+      <img src="{{ .image | absURL }}" alt="{{ .alt }}" class="card-image">
+    </div>
+    {{- end -}}
+
+    <div class="card-content">
+      <h2 class="card-title">{{ .Title }}</h2>
+      <p class="card-summary">{{ .Summary }}</p>
+    </div>
+  </a>
+
+  {{/* --- START: New Button Section --- */}}
+  {{/* This container will hold our new buttons */}}
+  <div class="card-footer">
+    <div class="card-buttons">
+      
+      {{/* Website button - only shows if liveUrl exists */}}
+      {{- with .Params.liveUrl }}
+      <a href="{{ . }}" class="card-btn" target="_blank" rel="noopener noreferrer">Website</a>
+      {{- end }}
+
+      {{/* GitHub button - only shows if repoUrl exists */}}
+      {{- with .Params.repoUrl }}
+      <a href="{{ . }}" class="card-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {{- end }}
+      
+      {{/* Details button - always shows */}}
+      <a href="{{ .Permalink }}" class="card-btn details-btn">Details</a>
+
+    </div>
+  </div>
+  {{/* --- END: New Button Section --- */}}
+</div>

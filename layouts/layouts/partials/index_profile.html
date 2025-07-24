@@ -1,0 +1,78 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+
+        <!-- Spinner: Start of the new container for the portrait effect -->
+        {{ $width := .imageWidth | default 150 }}
+        {{ $height := .imageHeight | default 150 }}
+        <div class="portrait-container" title="{{ .imageTitle | default "profile image" }}" style="width: {{ $width }}px; height: {{ $height }}px;">
+            <a href="{{ "/" | absURL }}" aria-label="profile image">
+                 <!-- Spinner: This is the empty div that creates the rotating border -->
+                <div class="spinner"></div>
+
+                {{- $img := "" }}
+                {{- if not (urls.Parse .imageUrl).IsAbs }}
+                    {{- $img = resources.Get .imageUrl }}
+                {{- end }}
+                {{- if $img }}
+                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+                    {{- if hugo.IsExtended -}}
+                        {{- $processableFormats = $processableFormats | append "webp" -}}
+                    {{- end -}}
+                    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+                    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                        {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+                            {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                        {{- else if .imageHeight }}
+                            {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+                        {{- else if .imageWidth }}
+                            {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+                        {{- else }}
+                            {{- $img = $img.Resize "150x150" }}
+                        {{- end }}
+                    {{- end }}
+                    <!-- Spinner: Instead of an <img> tag, we now use a div with a background image. -->
+                    <!-- This allows it to be placed under the spinner. The URL comes from Hugo's image processing. -->
+                    <div class="portrait-img" style="background-image: url('{{ $img.RelPermalink }}');"></div>
+                {{- else }}
+                <!-- Spinner: This is the fallback for absolute URLs that can't be processed by Hugo. -->
+                    <div class="portrait-img" style="background-image: url('{{ .imageUrl | absURL }}');"></div>
+                {{- end }}
+            </a>
+        </div>
+         <!-- Spinner: End of the new container -->
+        {{- end }}
+
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        
+        {{/* Display a short bio/introduction if the 'bio' parameter is defined in profileMode */}}
+        {{- if .bio }}
+        <p class="profile-bio">{{ .bio }}</p>
+        {{- end }}
+
+        {{- partial "social_icons.html" . }}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>

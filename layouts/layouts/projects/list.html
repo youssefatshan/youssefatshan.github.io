@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <p class="page-description">{{ .Description }}</p>
+  {{- end }}
+</header>
+
+{{/* This is our custom grid container */}}
+<div class="project-grid-container">
+  {{/* We loop through all the pages in the 'projects' section */}}
+  {{ range .Pages }}
+    {{/* For each page, we render the 'card' partial */}}
+    {{ partial "card.html" . }}
+  {{ end }}
+</div>
+
+{{ end }}

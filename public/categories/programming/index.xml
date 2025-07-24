@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on Youzarsifya7</title>
+    <link>http://localhost:1313/categories/programming/</link>
+    <description>Recent content in Programming on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jul 2025 16:09:44 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Next.js Is Your New Secret Weapon for Building Awesome Web Apps</title>
+      <link>http://localhost:1313/content/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
+      <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>
+      <guid>http://localhost:1313/content/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</guid>
+      <description>&lt;h1 id=&#34;why-nextjs-is-your-new-secret-weapon-for-building-awesome-web-apps-&#34;&gt;Why Next.js is Your New Secret Weapon for Building Awesome Web Apps 🚀&lt;/h1&gt;
+&lt;p&gt;!http://googleusercontent.com/image_collection/image_retrieval/12298402712055045150&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re building a web application today, you&amp;rsquo;re juggling a lot. You need speed, great SEO, and a fantastic user experience, all without wanting to pull your hair out during development. This is where &lt;strong&gt;Next.js&lt;/strong&gt;, the React framework, comes in and completely changes the game. It’s not just another tool; it’s a powerhouse that makes building sophisticated, high-performance web apps easier and faster.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
