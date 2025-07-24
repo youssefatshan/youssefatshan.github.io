@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/react-router/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abraj Platinum: Fiber Optic Solutions Website</title>
-      <link>http://localhost:1313/content/projects/ya7-project-company-01/</link>
+      <link>http://localhost:1313/projects/ya7-project-company-01/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-company-01/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-company-01/</guid>
       <description>Developed a sleek and modern corporate website for a fiber optics and network solutions provider, designed to highlight their technical expertise and elevate their digital presence.</description>
     </item>
   </channel>

@@ -5,16 +5,13 @@
     <loc>http://localhost:1313/tags/aos/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/content/projects/ya7-project-prototype-012/</loc>
+    <loc>http://localhost:1313/projects/ya7-project-prototype-012/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/frontend/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/next.js/</loc>
@@ -38,16 +35,16 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/blog/old-post/</loc>
+    <loc>http://localhost:1313/blog/old-post/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-07-12T16:09:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</loc>
+    <loc>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</loc>
     <lastmod>2025-07-12T16:09:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/nextjs/</loc>
@@ -56,7 +53,7 @@
     <loc>http://localhost:1313/categories/programming/</loc>
     <lastmod>2025-07-12T16:09:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/projects/ya7-project-company-01/</loc>
+    <loc>http://localhost:1313/projects/ya7-project-company-01/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/css3/</loc>
@@ -80,7 +77,7 @@
     <loc>http://localhost:1313/tags/figma/</loc>
     <lastmod>2023-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/projects/ya7-project-company-02/</loc>
+    <loc>http://localhost:1313/projects/ya7-project-company-02/</loc>
     <lastmod>2023-06-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/css/</loc>
@@ -92,13 +89,13 @@
     <loc>http://localhost:1313/tags/netlify/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/projects/ya7-project-prototype-002/</loc>
+    <loc>http://localhost:1313/projects/ya7-project-prototype-002/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/reactstrap/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/content/projects/ya7-project-prototype-01/</loc>
+    <loc>http://localhost:1313/projects/ya7-project-prototype-01/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/html/</loc>

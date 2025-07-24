@@ -3,6 +3,10 @@ languageCode: en-us
 title: Youzarsifya7
 theme: ["PaperMod"]
 
+caches: 
+  images: 
+    dir: :cacheDir/images
+
 params:
   # homeInfoParams:
   #   Title: "Hi Sweety"
@@ -65,7 +69,3 @@ menu:
       name: Archives
       url: /archives/   
       weight: 30
-
-caches: 
-  images: 
-    dir: :cacheDir/images

@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/figma/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Royal Platinum: Financial Services UI/UX Website</title>
-      <link>http://localhost:1313/content/projects/ya7-project-company-02/</link>
+      <link>http://localhost:1313/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-company-02/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-company-02/</guid>
       <description>A sleek and modern UI/UX Website for a financial services company, built with React.js and Tailwind CSS to translate a Figma design into a pixel-perfect, responsive website.</description>
     </item>
   </channel>

@@ -10,53 +10,53 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Moon: A Fictional Tech Startup Prototype</title>
-      <link>http://localhost:1313/content/projects/ya7-project-prototype-012/</link>
+      <link>http://localhost:1313/projects/ya7-project-prototype-012/</link>
       <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-prototype-012/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-prototype-012/</guid>
       <description>A responsive prototype for a fictional tech startup, showcasing component-based architecture with Next.js, responsive design with Tailwind CSS, and elegant scroll-based animations.</description>
     </item>
     <item>
       <title>Old tools for web development</title>
-      <link>http://localhost:1313/content/blog/old-post/</link>
+      <link>http://localhost:1313/blog/old-post/</link>
       <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/content/blog/old-post/</guid>
+      <guid>http://localhost:1313/blog/old-post/</guid>
       <description>&lt;p&gt;Old tools for web development&lt;/p&gt;</description>
     </item>
     <item>
       <title>Next.js Is Your New Secret Weapon for Building Awesome Web Apps</title>
-      <link>http://localhost:1313/content/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
+      <link>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
       <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>
-      <guid>http://localhost:1313/content/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</guid>
+      <guid>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</guid>
       <description>&lt;h1 id=&#34;why-nextjs-is-your-new-secret-weapon-for-building-awesome-web-apps-&#34;&gt;Why Next.js is Your New Secret Weapon for Building Awesome Web Apps 🚀&lt;/h1&gt;
 &lt;p&gt;!http://googleusercontent.com/image_collection/image_retrieval/12298402712055045150&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re building a web application today, you&amp;rsquo;re juggling a lot. You need speed, great SEO, and a fantastic user experience, all without wanting to pull your hair out during development. This is where &lt;strong&gt;Next.js&lt;/strong&gt;, the React framework, comes in and completely changes the game. It’s not just another tool; it’s a powerhouse that makes building sophisticated, high-performance web apps easier and faster.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Abraj Platinum: Fiber Optic Solutions Website</title>
-      <link>http://localhost:1313/content/projects/ya7-project-company-01/</link>
+      <link>http://localhost:1313/projects/ya7-project-company-01/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-company-01/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-company-01/</guid>
       <description>Developed a sleek and modern corporate website for a fiber optics and network solutions provider, designed to highlight their technical expertise and elevate their digital presence.</description>
     </item>
     <item>
       <title>Royal Platinum: Financial Services UI/UX Website</title>
-      <link>http://localhost:1313/content/projects/ya7-project-company-02/</link>
+      <link>http://localhost:1313/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-company-02/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-company-02/</guid>
       <description>A sleek and modern UI/UX Website for a financial services company, built with React.js and Tailwind CSS to translate a Figma design into a pixel-perfect, responsive website.</description>
     </item>
     <item>
       <title>OllieBites: A Fast Food Chain Website Prototype</title>
-      <link>http://localhost:1313/content/projects/ya7-project-prototype-002/</link>
+      <link>http://localhost:1313/projects/ya7-project-prototype-002/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-prototype-002/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-prototype-002/</guid>
       <description>A fully responsive prototype for a fast-food brand, designed and developed from scratch. Features interactive maps with Leaflet.js and a complete custom UI/UX design.</description>
     </item>
     <item>
       <title>Brushstrokes: Skin-Care Products Store Prototype</title>
-      <link>http://localhost:1313/content/projects/ya7-project-prototype-01/</link>
+      <link>http://localhost:1313/projects/ya7-project-prototype-01/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/projects/ya7-project-prototype-01/</guid>
+      <guid>http://localhost:1313/projects/ya7-project-prototype-01/</guid>
       <description>A responsive e-commerce prototype for a skin-care brand, built with React.js. Features product listings and detail pages populated from a JSON data source.</description>
     </item>
   </channel>
