@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/frontend/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/programming/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vite/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/getting-started-with-vite-the-next-gen-frontend-build-tool/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-29T08:00:00+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/aos/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/ya7-project-prototype-012/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/frontend/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
@@ -20,9 +41,6 @@
     <loc>http://localhost:1313/tags/react/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/tailwind-css/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
@@ -32,25 +50,16 @@
     <loc>http://localhost:1313/tags/vercel/</loc>
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/javascript/</loc>
-    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
     <lastmod>2025-07-12T17:30:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/reactjs-blog-post/</loc>
     <lastmod>2025-07-12T17:30:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/backend/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/btc/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/crypto/</loc>
@@ -62,7 +71,16 @@
     <loc>http://localhost:1313/blog/old-post/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/test-btc/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/test-post/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/trading/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/ttrading-ltc/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</loc>
@@ -81,9 +99,6 @@
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/react-spring/</loc>
-    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vite/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web3forms/</loc>

@@ -188,6 +188,8 @@
     
       <button class="filter-btn" data-category="programming">programming</button>
     
+      <button class="filter-btn" data-category="trading">trading</button>
+    
 
     <h2 style="margin-top: 1rem;">Filter by Tag</h2>
     <button class="filter-btn" data-tag="all">All</button>
@@ -196,6 +198,7 @@
       <button class="filter-btn" data-tag="react">react</button>
       <button class="filter-btn" data-tag="javascript">javascript</button>
       <button class="filter-btn" data-tag="backend">backend</button>
+      <button class="filter-btn" data-tag="btc">btc</button>
       <button class="filter-btn" data-tag="ltc">ltc</button>
       <button class="filter-btn" data-tag="nextjs">nextjs</button>
   </section>
@@ -256,6 +259,21 @@ What is React.js? React.js is an open-source JavaScript library used for buildin
         <a class="entry-link" aria-label="post link to Old tools for web development" href="http://localhost:1313/blog/old-post/"></a>
       </article>
 
+      <article class="post-entry post-card" data-category="crypto" data-tags="btc"> 
+
+        <header class="entry-header">
+          <h2 class="entry-hint-parent">Test BTC Post
+          </h2>
+        </header>
+        <div class="entry-content">
+          <p>try this…
+</p>
+        </div>
+        <footer class="entry-footer"><span title='2025-07-12 16:46:01 +0300 +03'>July 12, 2025</span>&nbsp;·&nbsp;Youssef Atshan</footer>
+
+        <a class="entry-link" aria-label="post link to Test BTC Post" href="http://localhost:1313/blog/test-btc/"></a>
+      </article>
+
       <article class="post-entry post-card" data-category="crypto" data-tags="ltc"> 
 
         <header class="entry-header">
@@ -269,6 +287,21 @@ What is React.js? React.js is an open-source JavaScript library used for buildin
         <footer class="entry-footer"><span title='2025-07-12 16:46:01 +0300 +03'>July 12, 2025</span>&nbsp;·&nbsp;Youssef Atshan</footer>
 
         <a class="entry-link" aria-label="post link to Test Post" href="http://localhost:1313/blog/test-post/"></a>
+      </article>
+
+      <article class="post-entry post-card" data-category="trading" data-tags="ltc"> 
+
+        <header class="entry-header">
+          <h2 class="entry-hint-parent">Trading LTC Post
+          </h2>
+        </header>
+        <div class="entry-content">
+          <p>try this…
+</p>
+        </div>
+        <footer class="entry-footer"><span title='2025-07-12 16:46:01 +0300 +03'>July 12, 2025</span>&nbsp;·&nbsp;Youssef Atshan</footer>
+
+        <a class="entry-link" aria-label="post link to Trading LTC Post" href="http://localhost:1313/blog/ttrading-ltc/"></a>
       </article>
 
       <article class="post-entry post-card" data-category="programming" data-tags="nextjs"> 
@@ -317,16 +350,26 @@ If you’re building a web application today, you’re juggling a lot. You need 
       let activeCategory = 'all';
       let activeTag = 'all';
 
+      function setActiveButton(buttons, activeValue, dataAttr) {
+        buttons.forEach(btn => {
+          if (btn.getAttribute(dataAttr) === activeValue) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+      }
+
       function filterPosts() {
         posts.forEach(post => {
           const postCat = post.dataset.category;
           const postTags = post.dataset.tags ? post.dataset.tags.split(',') : [];
-
           const catMatch = (activeCategory === 'all' || postCat === activeCategory);
           const tagMatch = (activeTag === 'all' || postTags.includes(activeTag));
-
           post.style.display = (catMatch && tagMatch) ? 'block' : 'none';
         });
+        setActiveButton(catButtons, activeCategory, 'data-category');
+        setActiveButton(tagButtons, activeTag, 'data-tag');
       }
 
       catButtons.forEach(btn => {
@@ -342,6 +385,9 @@ If you’re building a web application today, you’re juggling a lot. You need 
           filterPosts();
         });
       });
+
+      
+      filterPosts();
     });
   </script>
 
@@ -354,9 +400,16 @@ If you’re building a web application today, you’re juggling a lot. You need 
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      transition: background 0.2s, color 0.2s;
     }
     .filter-btn:hover {
       background-color: #ddd;
+    }
+    .filter-btn.active {
+      background-color: #007acc;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     .post-card {
       margin-bottom: 2rem;
