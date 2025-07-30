@@ -75,7 +75,7 @@
   </section>
 
   <!-- POSTS LIST -->
-  <section class="posts">
+<section class="posts">
     {{- range $index, $page := $paginator.Pages }}
       {{- $class := "post-entry" }}
       {{- $cat := "" }}
@@ -89,32 +89,42 @@
         {{- end }}
       {{- end }}
 
-      <article class="{{ $class }} post-card" data-category="{{ $cat }}" data-tags="{{ delimit $tags "," }}">
-        {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-        {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+      <article class="{{ $class }} post-card post-entry-thumb" data-category="{{ $cat }}" data-tags="{{ delimit $tags "," }}">
+        
+        {{- with .Params.cover -}}
+          {{- if .image -}}
+          <div class="entry-thumbnail">
+            <a href="{{ $.Permalink }}" class="thumbnail-link">
+              <img src="{{ .image | absURL }}" alt="{{ .alt }}" loading="lazy">
+            </a>
+          </div>
+          {{- end -}}
+        {{- end -}}
 
-        <header class="entry-header">
-          <h2 class="entry-hint-parent">
-            {{- .Title }}
-            {{- if .Draft }}<span class="entry-hint" title="Draft">D</span>{{- end }}
-          </h2>
-        </header>
+        <div class="entry-text-content">
+          <header class="entry-header">
+            <h2 class="entry-hint-parent">
+              {{- .Title }}
+              {{- if .Draft }}<span class="entry-hint" title="Draft">D</span>{{- end }}
+            </h2>
+          </header>
 
-        {{- if (ne (.Param "hideSummary") true) }}
-        <div class="entry-content">
-          <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+          {{- if (ne (.Param "hideSummary") true) }}
+          <div class="entry-content">
+            <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+          </div>
+          {{- end }}
+
+          {{- if not (.Param "hideMeta") }}
+          <footer class="entry-footer">
+            {{- partial "post_meta.html" . -}}
+          </footer>
+          {{- end }}
         </div>
-        {{- end }}
-
-        {{- if not (.Param "hideMeta") }}
-        <footer class="entry-footer">
-          {{- partial "post_meta.html" . -}}
-        </footer>
-        {{- end }}
 
         <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </article>
-    {{- end }}
+      {{- end }}
   </section>
 
   <!-- PAGINATION -->
@@ -222,6 +232,39 @@
     padding-bottom: 1rem;
   }
   */
+  /* --- Post Thumbnail Layout Styles --- */
+    .post-entry-thumb {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    .entry-thumbnail {
+      flex-shrink: 0;
+      width: 220px;
+    }
+    .entry-thumbnail img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+    .entry-text-content {
+      flex-grow: 1;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .post-entry-thumb {
+        flex-direction: column;
+      }
+      .entry-thumbnail {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
 </style>
 
 {{- end }}

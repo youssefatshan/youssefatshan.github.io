@@ -3,7 +3,7 @@ date: '2025-07-29T08:00:00+03:00'
 draft: false
 title: 'Vite: The Fastest Front-End Tooling You Didn’t Know You Needed'
 cover:
-  image: images/blog/vite-cover.png
+  image: images/blog/vite-1.png
   alt: 'vite cover photo'
   caption: 'VITE.JS'
 tags: ["Vite", "Frontend"]
