@@ -21,6 +21,9 @@ params:
   keywords: [Blog, Portfolio, Web Developer]
   author: Youssef Atshan
   # dateFormat: "January 2, 2006 at 3:04 PM"
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  ShowBreadCrumbs: false
+  ShowShareButtons: true
   # --------------
   #Home Page
   profileMode:
@@ -37,7 +40,7 @@ params:
     #     url: "https://www.fiverr.com/" # Replace with your Fiverr profile URL
     #   - name: "Hire Me on Freelancer"
     #     url: "https://www.freelancer.com/" # Replace with your Freelancer profile URL
-        
+
   socialIcons:
     - name: github
       url: "https://github.com/youssefatshan"
@@ -59,7 +62,7 @@ menu:
     - identifier: blog
       name: Blog
       url: /blog/
-      weight: 6
+      weight: 6 
     - identifier: categories
       name: Categories
       url: /categories/
@@ -72,3 +75,14 @@ menu:
       name: Archives
       url: /archives/   
       weight: 30
+
+  # blog:
+  #   - name: "Getting Started with Hugo"
+  #     url: "/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/"
+  #     weight: 10
+  #   - name: "Advanced Topics"
+  #     url: "/blog/your-second-post/"
+  #     weight: 20
+  #   - name: "All Blog Categories"
+  #     url: "/categories/blog/" # Assuming you use a 'blog' category
+  #     weight: 30

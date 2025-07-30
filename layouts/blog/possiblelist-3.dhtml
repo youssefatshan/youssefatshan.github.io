@@ -1,0 +1,102 @@
+{{ define "main" }}
+<main class="main-content">
+  <h1 class="blog-title">{{ .Title }}</h1>
+
+  <!-- ========== Category Filter Buttons ========== -->
+  <div id="category-filters" style="margin: 2rem 0;">
+    <button class="filter-btn active" data-category="all">All</button>
+    {{ $categories := slice }}
+    {{ range .Site.RegularPages }}
+      {{ range .Params.categories }}
+        {{ $categories = $categories | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $uniqueCategories := uniq $categories }}
+    {{ range $uniqueCategories }}
+      <button class="filter-btn" data-category="{{ . | urlize }}">{{ . }}</button>
+    {{ end }}
+  </div>
+
+  <!-- ========== Blog Post List ========== -->
+  <div id="posts-container">
+    {{ $pages := where .Site.RegularPages "Section" "blog" }}
+    {{ range $pages.ByDate.Reverse }}
+      {{ $cat := index .Params.categories 0 | default "uncategorized" }}
+      <div class="post-card" data-category="{{ $cat | urlize }}" style="margin-bottom: 2rem; transition: opacity 0.3s ease;">
+        <article>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Summary }}</p>
+          <small>Category: {{ $cat }}</small>
+        </article>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- ========== No Posts Found Message ========== -->
+  <p id="no-posts-message" style="display: none; text-align: center; font-style: italic; color: gray;">
+    No posts in this category yet.
+  </p>
+</main>
+
+<!-- ========== Category Filter Script ========== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".filter-btn");
+    const posts = document.querySelectorAll(".post-card");
+    const noPostsMsg = document.getElementById("no-posts-message");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const selected = btn.dataset.category;
+        let visibleCount = 0;
+
+        posts.forEach(post => {
+          const postCategory = post.dataset.category;
+          const show = (selected === "all" || postCategory === selected);
+
+          post.style.display = show ? "block" : "none";
+          post.style.opacity = show ? "1" : "0";
+          if (show) visibleCount++;
+        });
+
+        noPostsMsg.style.display = visibleCount === 0 ? "block" : "none";
+      });
+    });
+  });
+</script>
+
+<!-- ========== Styling (Optional, move to your CSS) ========== -->
+<style>
+  .filter-btn {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .filter-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  .filter-btn.active {
+    background-color: #b3d4fc;
+    font-weight: bold;
+  }
+
+  .post-card {
+    transition: opacity 0.3s ease;
+  }
+
+  .blog-title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+</style>
+{{ end }}

@@ -3,7 +3,7 @@ date: '2025-07-12T16:09:44+03:00'
 draft: false
 title: 'Next.js Is Your New Secret Weapon for Building Awesome Web Apps'
 cover:
-    image: images/next-js-1.png
+    image: images/blog/next-js-1.png
     alt: 'next.js cover photo'
     caption: 'NEXT.JS'
 tags: ["NextJS"]

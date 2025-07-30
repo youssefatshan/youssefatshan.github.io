@@ -6,8 +6,24 @@
     <description>Recent content in Programming on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jul 2025 16:09:44 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 17:30:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React.js: The Front-End Powerhouse You Need in 2025</title>
+      <link>http://localhost:1313/blog/reactjs-blog-post/</link>
+      <pubDate>Sat, 12 Jul 2025 17:30:00 +0300</pubDate>
+      <guid>http://localhost:1313/blog/reactjs-blog-post/</guid>
+      <description>&lt;p&gt;React.js, developed and maintained by Facebook (now Meta), has become one of the most popular JavaScript libraries for building modern web applications. Whether you&amp;rsquo;re crafting a simple single-page website or a complex web app, React provides a powerful toolkit for creating dynamic and responsive user interfaces.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-reactjs&#34;&gt;What is React.js?&lt;/h2&gt;
+&lt;p&gt;React.js is an open-source JavaScript library used for building user interfaces, particularly for single-page applications. Its core philosophy is component-based architecture, which allows developers to build encapsulated pieces of UI and compose them together.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Old tools for web development</title>
+      <link>http://localhost:1313/blog/old-post/</link>
+      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
+      <guid>http://localhost:1313/blog/old-post/</guid>
+      <description>&lt;p&gt;Old tools for web development&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Next.js Is Your New Secret Weapon for Building Awesome Web Apps</title>
       <link>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>

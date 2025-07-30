@@ -36,13 +36,34 @@
     <lastmod>2025-07-13T11:20:03+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/programming/</loc>
+    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/reactjs-blog-post/</loc>
+    <lastmod>2025-07-12T17:30:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/backend/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/crypto/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ltc/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/old-post/</loc>
     <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-12T16:09:44+03:00</lastmod>
+    <loc>http://localhost:1313/blog/test-post/</loc>
+    <lastmod>2025-07-12T16:46:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</loc>
     <lastmod>2025-07-12T16:09:44+03:00</lastmod>
@@ -50,16 +71,10 @@
     <loc>http://localhost:1313/tags/nextjs/</loc>
     <lastmod>2025-07-12T16:09:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
-    <lastmod>2025-07-12T16:09:44+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/projects/ya7-project-company-01/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/css3/</loc>
-    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/react-router/</loc>
@@ -105,5 +120,7 @@
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

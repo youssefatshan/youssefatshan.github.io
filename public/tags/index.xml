@@ -58,6 +58,27 @@
       <description></description>
     </item>
     <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Sat, 12 Jul 2025 17:30:00 +0300</pubDate>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>http://localhost:1313/tags/backend/</link>
+      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
+      <guid>http://localhost:1313/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LTC</title>
+      <link>http://localhost:1313/tags/ltc/</link>
+      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
+      <guid>http://localhost:1313/tags/ltc/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>NextJS</title>
       <link>http://localhost:1313/tags/nextjs/</link>
       <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>
@@ -69,13 +90,6 @@
       <link>http://localhost:1313/tags/css3/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/css3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JavaScript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
-      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
