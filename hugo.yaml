@@ -24,6 +24,20 @@ params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   ShowBreadCrumbs: false
   ShowShareButtons: true
+  ShowSearch: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    ignoreLocation: true
+    threshold: 0.3
+    minMatchCharLength: 0
+    keys:
+    - title
+    - summary
+    - content
+    - tags
+    - categories
+    - permalink
   # --------------
   #Home Page
   profileMode:
@@ -75,14 +89,12 @@ menu:
       name: Archives
       url: /archives/   
       weight: 30
+    - name: "Search"
+      url: "/search/"
+      weight: 10
 
-  # blog:
-  #   - name: "Getting Started with Hugo"
-  #     url: "/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/"
-  #     weight: 10
-  #   - name: "Advanced Topics"
-  #     url: "/blog/your-second-post/"
-  #     weight: 20
-  #   - name: "All Blog Categories"
-  #     url: "/categories/blog/" # Assuming you use a 'blog' category
-  #     weight: 30
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search

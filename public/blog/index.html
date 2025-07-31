@@ -157,6 +157,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
@@ -181,26 +186,33 @@
 
   
   <section class="filters" style="margin-bottom: 2rem;">
-    <h2>Filter by Category</h2>
-    <button class="filter-btn" data-category="all">All</button>
-    
-      <button class="filter-btn" data-category="crypto">crypto</button>
-    
-      <button class="filter-btn" data-category="programming">programming</button>
-    
-      <button class="filter-btn" data-category="trading">trading</button>
-    
-
-    <h2 style="margin-top: 1rem;">Filter by Tag</h2>
-    <button class="filter-btn" data-tag="all">All</button>
-      <button class="filter-btn" data-tag="vite">vite</button>
-      <button class="filter-btn" data-tag="frontend">frontend</button>
-      <button class="filter-btn" data-tag="react">react</button>
-      <button class="filter-btn" data-tag="javascript">javascript</button>
-      <button class="filter-btn" data-tag="backend">backend</button>
-      <button class="filter-btn" data-tag="btc">btc</button>
-      <button class="filter-btn" data-tag="ltc">ltc</button>
-      <button class="filter-btn" data-tag="nextjs">nextjs</button>
+    <div class="filter-group">
+      <button class="filter-toggle" type="button" aria-expanded="true" aria-controls="category-list">Filter by Category ▼</button>
+      <div class="filter-list" id="category-list">
+        <button class="filter-btn" data-category="all">All</button>
+        
+          <button class="filter-btn" data-category="crypto">crypto</button>
+        
+          <button class="filter-btn" data-category="programming">programming</button>
+        
+          <button class="filter-btn" data-category="trading">trading</button>
+        
+      </div>
+    </div>
+    <div class="filter-group">
+      <button class="filter-toggle" type="button" aria-expanded="true" aria-controls="tag-list">Filter by Tag ▼</button>
+      <div class="filter-list" id="tag-list">
+        <button class="filter-btn" data-tag="all">All</button>
+          <button class="filter-btn" data-tag="vite">vite</button>
+          <button class="filter-btn" data-tag="frontend">frontend</button>
+          <button class="filter-btn" data-tag="react">react</button>
+          <button class="filter-btn" data-tag="javascript">javascript</button>
+          <button class="filter-btn" data-tag="backend">backend</button>
+          <button class="filter-btn" data-tag="btc">btc</button>
+          <button class="filter-btn" data-tag="ltc">ltc</button>
+          <button class="filter-btn" data-tag="nextjs">nextjs</button>
+      </div>
+    </div>
   </section>
 
   
@@ -346,6 +358,17 @@ If you’re building a web application today, you’re juggling a lot. You need 
   
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+      
+      document.querySelectorAll('.filter-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          const list = document.getElementById(this.getAttribute('aria-controls'));
+          const expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !expanded);
+          list.style.display = expanded ? 'none' : '';
+          this.innerHTML = this.innerHTML.replace(expanded ? '▲' : '▼', expanded ? '▼' : '▲');
+        });
+      });
+
       const catButtons = document.querySelectorAll('[data-category]');
       const tagButtons = document.querySelectorAll('[data-tag]');
       const posts = document.querySelectorAll('.post-card');
@@ -369,9 +392,6 @@ If you’re building a web application today, you’re juggling a lot. You need 
           const postTags = post.dataset.tags ? post.dataset.tags.split(',') : [];
           const catMatch = (activeCategory === 'all' || postCat === activeCategory);
           const tagMatch = (activeTag === 'all' || postTags.includes(activeTag));
-
-          
-          
           if (catMatch && tagMatch) {
             post.style.display = 'flex';
           } else {
@@ -404,11 +424,32 @@ If you’re building a web application today, you’re juggling a lot. You need 
   
   <style>
    
-  .filters h2 {
+  .filter-group {
+    margin-bottom: 1.5rem;
+  }
+  .filter-toggle {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: var(--secondary);
     border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
+    outline: none;
+    transition: color 0.2s;
+  }
+  .filter-toggle:focus, .filter-toggle:hover {
+    color: var(--primary);
+  }
+  .filter-list {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    transition: display 0.2s;
   }
 
    
@@ -422,6 +463,7 @@ If you’re building a web application today, you’re juggling a lot. You need 
     border-radius: var(--radius);  
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    font-size: 1rem;
   }
 
    
