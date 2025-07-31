@@ -10,8 +10,8 @@
 <meta name="description" content="search">
 <meta name="author" content="Youssef Atshan">
 <link rel="canonical" href="http://localhost:1313/search/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.e81ff99589efffb6cc5938743fd6f131260118e46870a1512327b2d2cf678866.css" integrity="sha256-6B/5lYnv/7bMWTh0P9bxMSYBGORocKFRIyey0s9niGY=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-<script defer crossorigin="anonymous" src="/assets/js/search.80b6cee3d44e2e374988d2232812e60eea083bcc54ebfa66766b80f128f4a704.js" integrity="sha256-gLbO49ROLjdJiNIjKBLmDuoIO8xU6/pmdmuA8Sj0pwQ="></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f8e05590f1f92c820b0c737933d312a654113c2ac4b4dd18ab0a64f330515d29.css" integrity="sha256-&#43;OBVkPH5LIILDHN5M9MSplQRPCrEtN0Yqwpk8zBRXSk=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+<script defer crossorigin="anonymous" src="/assets/js/search.5678fcc433fda50082b7b06c07741c9d814a035dd0e9fccf1162e2e13537b741.js" integrity="sha256-Vnj8xDP9pQCCt7BsB3QcnYFKA13Q6fzPEWLi4TU3t0E="></script>
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -219,11 +219,88 @@
     <div class="post-meta"></div>
 </header>
 
+
 <div id="searchbox">
-    <input id="searchInput" autofocus placeholder="placeholder text in search input box"
+    <label for="sectionFilter" style="margin-bottom: 0.5em; display: block;">Filter by section:</label>
+    <select id="sectionFilter" style="margin-bottom: 1em;">
+        <option value="all">All</option>
+        <option value="blog">Blog</option>
+        <option value="projects">Projects</option>
+    </select>
+    <input id="searchInput" autofocus placeholder="Looking for something?"
         aria-label="search" type="search" autocomplete="off" maxlength="64">
     <ul id="searchResults" aria-label="search results"></ul>
 </div>
+
+
+<script>
+
+const currentPermalink = window.location.origin + window.location.pathname.replace(/\/index\.html$/, '/');
+window.addEventListener('DOMContentLoaded', function() {
+  const origOnLoad = window.onload;
+  window.onload = function() {
+    if (typeof origOnLoad === 'function') origOnLoad();
+    
+    const origXhrOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url) {
+      this.addEventListener('load', function() {
+        try {
+          let data = JSON.parse(this.responseText);
+          
+          const filtered = data.filter(entry => entry.permalink === currentPermalink || entry.permalink === window.location.href);
+          this.responseText = JSON.stringify(filtered);
+        } catch(e) {}
+      });
+      origXhrOpen.apply(this, arguments);
+    };
+
+    
+    
+    const origFetch = window.fetch;
+    window.fetch = function() {
+      return origFetch.apply(this, arguments).then(async resp => {
+        if (arguments[0] && arguments[0].includes('index.json')) {
+          const cloned = resp.clone();
+          const json = await cloned.json();
+          
+          window.__fullSearchIndex = json;
+        }
+        return resp;
+      });
+    };
+
+    
+    document.getElementById('sectionFilter').addEventListener('change', function() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        
+        const event = new Event('input', { bubbles: true });
+        input.dispatchEvent(event);
+      }
+    });
+  };
+});
+</script>
+<script src="/js/fastsearch.js"></script>
+<script>
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  
+  const origSearch = window.doSearch;
+  if (typeof origSearch === 'function') {
+    window.doSearch = function(query) {
+      const section = document.getElementById('sectionFilter').value;
+      let index = window.__fullSearchIndex || [];
+      if (section && section !== 'all') {
+        index = index.filter(item => item.section === section);
+      }
+      
+      return origSearch.call(this, query, index);
+    };
+  }
+});
+</script>
     </main>
     
 <footer class="footer">

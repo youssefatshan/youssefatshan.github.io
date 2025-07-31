@@ -239,3 +239,56 @@ h1, h2, h3, h4, h5, h6, .post-title {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Beginning: Custom Search Filter Styling */
+
+#searchbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--theme);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#searchbox select,
+#searchbox input[type="search"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--entry);
+  color: var(--primary);
+}
+
+#searchbox select:focus,
+#searchbox input[type="search"]:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
+}
+
+#searchbox label {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+#searchResults {
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (max-width: 600px) {
+  #searchbox {
+    padding: 1rem 0.5rem;
+  }
+  #searchbox input[type="search"]::placeholder {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ending: Custom Search Filter Styling */

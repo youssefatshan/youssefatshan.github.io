@@ -1,0 +1,106 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header>
+
+
+<div id="searchbox">
+    <label for="sectionFilter" style="margin-bottom: 0.5em; display: block;">Filter by section:</label>
+    <select id="sectionFilter" style="margin-bottom: 1em;">
+        <option value="all">All</option>
+        <option value="blog">Blog</option>
+        <option value="projects">Projects</option>
+    </select>
+    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+
+
+<script>
+// Patch for single-page search: filter index to only this page
+const currentPermalink = window.location.origin + window.location.pathname.replace(/\/index\.html$/, '/');
+window.addEventListener('DOMContentLoaded', function() {
+  const origOnLoad = window.onload;
+  window.onload = function() {
+    if (typeof origOnLoad === 'function') origOnLoad();
+    // Patch fuse after it loads
+    const origXhrOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url) {
+      this.addEventListener('load', function() {
+        try {
+          let data = JSON.parse(this.responseText);
+          // Only keep the entry for this page
+          const filtered = data.filter(entry => entry.permalink === currentPermalink || entry.permalink === window.location.href);
+          this.responseText = JSON.stringify(filtered);
+        } catch(e) {}
+      });
+      origXhrOpen.apply(this, arguments);
+    };
+
+    // Enhance fastsearch.js to filter by section
+    // Wait for fastsearch.js to load
+    const origFetch = window.fetch;
+    window.fetch = function() {
+      return origFetch.apply(this, arguments).then(async resp => {
+        if (arguments[0] && arguments[0].includes('index.json')) {
+          const cloned = resp.clone();
+          const json = await cloned.json();
+          // Save the full index for filtering
+          window.__fullSearchIndex = json;
+        }
+        return resp;
+      });
+    };
+
+    // Listen for section filter changes and re-run search
+    document.getElementById('sectionFilter').addEventListener('change', function() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        // Trigger input event to re-run search
+        const event = new Event('input', { bubbles: true });
+        input.dispatchEvent(event);
+      }
+    });
+  };
+});
+</script>
+<script src="/js/fastsearch.js"></script>
+<script>
+// Patch fastsearch.js search logic to filter by section before searching
+// This assumes fastsearch.js exposes a global search function or can be monkey-patched
+window.addEventListener('DOMContentLoaded', function() {
+  // Wait for fastsearch.js to define the search logic
+  const origSearch = window.doSearch;
+  if (typeof origSearch === 'function') {
+    window.doSearch = function(query) {
+      const section = document.getElementById('sectionFilter').value;
+      let index = window.__fullSearchIndex || [];
+      if (section && section !== 'all') {
+        index = index.filter(item => item.section === section);
+      }
+      // Call the original search with the filtered index
+      return origSearch.call(this, query, index);
+    };
+  }
+});
+</script>
+
+{{- end }}{{/* end main */}}
