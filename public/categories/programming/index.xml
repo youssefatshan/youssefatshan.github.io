@@ -43,13 +43,6 @@
 &lt;p&gt;React.js is an open-source JavaScript library used for building user interfaces, particularly for single-page applications. Its core philosophy is component-based architecture, which allows developers to build encapsulated pieces of UI and compose them together.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Old tools for web development</title>
-      <link>http://localhost:1313/blog/posts/old-post/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/blog/posts/old-post/</guid>
-      <description>&lt;p&gt;Old tools for web development&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Next.js Is Your New Secret Weapon for Building Awesome Web Apps</title>
       <link>http://localhost:1313/blog/posts/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
       <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>

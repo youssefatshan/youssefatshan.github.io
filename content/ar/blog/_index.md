@@ -1,5 +1,5 @@
 ---
-title: "Blog"
-description: "A collection of my thoughts, tutorials, and articles on web development and technology."
-layout: "baseof"
+title: "المدونة"
+description: "مجموعة من أفكاري ودروسي ومقالاتي حول تطوير الويب والتقنية."
+layout: "list"
 ---

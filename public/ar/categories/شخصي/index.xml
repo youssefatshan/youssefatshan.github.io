@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>شخصي on Youzarsifya7</title>
+    <link>http://localhost:1313/ar/categories/%D8%B4%D8%AE%D8%B5%D9%8A/</link>
+    <description>Recent content in شخصي on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Wed, 12 Feb 2025 08:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/categories/%D8%B4%D8%AE%D8%B5%D9%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>أفضل موقع لي</title>
+      <link>http://localhost:1313/ar/blog/posts/my-best-website/</link>
+      <pubDate>Wed, 12 Feb 2025 08:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/ar/blog/posts/my-best-website/</guid>
+      <description>&lt;p&gt;موقعي الشخصي&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -168,8 +168,8 @@
 
 /* Style for secondary buttons (Website, GitHub) */
 .card-btn {
-  background-color: var(--tertiary);
-  color: var(--secondary);
+  background-color: #232b36;
+  color: #f9f9fb;
 }
 
 .card-btn:hover {
@@ -178,8 +178,8 @@
 
 /* Special style for the primary "Details" button */
 .details-btn {
-  background-color: var(--primary);
-  color: var(--primary-background);
+  background-color:  #1e90ff;
+  color: #f9f9fb;
 }
 
 .details-btn:hover {

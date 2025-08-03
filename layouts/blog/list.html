@@ -45,22 +45,20 @@
     {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
   {{- end }}
 
-  {{- $paginator := .Paginate $pages }}
-
   <!-- FILTER BUTTONS SECTION -->
   <section class="filters" style="margin-bottom: 2rem;">
     <div class="filter-group">
-      <button class="filter-toggle" type="button" aria-expanded="true" aria-controls="category-list">Filter by Category ▼</button>
-      <div class="filter-list" id="category-list">
-        <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-toggle" type="button" aria-expanded="true" aria-controls="category-list">{{ i18n "filterByCategory" }} ▲</button> 
+      <div class="filter-list" id="category-list" style="display: block;">
+        <button class="filter-btn" data-category="all">{{ i18n "all" }}</button>
         {{ range $name, $_ := .Site.Taxonomies.categories }}
           <button class="filter-btn" data-category="{{ $name | urlize }}">{{ $name }}</button>
         {{ end }}
       </div>
     </div>
     <div class="filter-group">
-      <button class="filter-toggle" type="button" aria-expanded="true" aria-controls="tag-list">Filter by Tag ▼</button>
-      <div class="filter-list" id="tag-list">
+      <button class="filter-toggle" type="button" aria-expanded="false" aria-controls="tag-list">{{ i18n "filterByTag" }} ▼</button>
+      <div class="filter-list" id="tag-list" style="display: none;">
         <button class="filter-btn" data-tag="all">All</button>
         {{- $blogPages := where site.RegularPages "Type" "blog" }}
         {{- $usedTags := slice }}
@@ -82,8 +80,8 @@
   </section>
 
   <!-- POSTS LIST -->
-<section class="posts">
-    {{- range $index, $page := $paginator.Pages }}
+<section class="posts" id="posts-list">
+    {{- range $index, $page := $pages }}
       {{- $class := "post-entry" }}
       {{- $cat := "" }}
       {{- with index .Params.categories 0 }}
@@ -131,102 +129,116 @@
 
         <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </article>
-      {{- end }}
-  </section>
+    {{- end }}
+</section>
 
   <!-- PAGINATION -->
-  {{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-      «&nbsp;{{ i18n "prev_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
-      {{- end }}
-    </a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-      {{- i18n "next_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
-      {{- end }}&nbsp;»
-    </a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
+  <footer class="page-footer">
+    <nav class="pagination" id="pagination"></nav>
+  </footer>
 
   <!-- FILTER SCRIPT -->
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Toggle filter lists
-      document.querySelectorAll('.filter-toggle').forEach(toggle => {
-        toggle.addEventListener('click', function() {
-          const list = document.getElementById(this.getAttribute('aria-controls'));
-          const expanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', !expanded);
-          list.style.display = expanded ? 'none' : '';
-          this.innerHTML = this.innerHTML.replace(expanded ? '▲' : '▼', expanded ? '▼' : '▲');
-        });
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  // Pass translated strings from Hugo to JavaScript
+  const i18n = {
+      prevPage: "{{ i18n "prev_page" }}",
+       nextPage: "{{ i18n "next_page" }}"
+  };
+  const catButtons = document.querySelectorAll('[data-category]');
+  const tagButtons = document.querySelectorAll('[data-tag]');
+  const posts = Array.from(document.querySelectorAll('.post-card'));
+  const postsList = document.getElementById('posts-list');
+  const pagination = document.getElementById('pagination');
+  const POSTS_PER_PAGE = 6;
+  let activeCategory = 'all';
+  let activeTag = 'all';
+  let currentPage = 1;
 
-      const catButtons = document.querySelectorAll('[data-category]');
-      const tagButtons = document.querySelectorAll('[data-tag]');
-      const posts = document.querySelectorAll('.post-card');
-
-      let activeCategory = 'all';
-      let activeTag = 'all';
-
-      function setActiveButton(buttons, activeValue, dataAttr) {
-        buttons.forEach(btn => {
-          if (btn.getAttribute(dataAttr) === activeValue) {
-            btn.classList.add('active');
-          } else {
-            btn.classList.remove('active');
-          }
-        });
+  function setActiveButton(buttons, activeValue, dataAttr) {
+    buttons.forEach(btn => {
+      if (btn.getAttribute(dataAttr) === activeValue) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
       }
-
-      function filterPosts() {
-        posts.forEach(post => {
-          const postCat = post.dataset.category;
-          const postTags = post.dataset.tags ? post.dataset.tags.split(',') : [];
-          const catMatch = (activeCategory === 'all' || postCat === activeCategory);
-          const tagMatch = (activeTag === 'all' || postTags.includes(activeTag));
-          if (catMatch && tagMatch) {
-            post.style.display = 'flex';
-          } else {
-            post.style.display = 'none';
-          }
-        });
-        setActiveButton(catButtons, activeCategory, 'data-category');
-        setActiveButton(tagButtons, activeTag, 'data-tag');
-      }
-
-      catButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          activeCategory = btn.dataset.category;
-          filterPosts();
-        });
-      });
-
-      tagButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          activeTag = btn.dataset.tag;
-          filterPosts();
-        });
-      });
-
-      // Set initial active state
-      filterPosts();
     });
-  </script>
+  }
+
+  function getFilteredPosts() {
+    return posts.filter(post => {
+      const postCat = post.dataset.category;
+      const postTags = post.dataset.tags ? post.dataset.tags.split(',') : [];
+      const catMatch = (activeCategory === 'all' || postCat === activeCategory);
+      const tagMatch = (activeTag === 'all' || postTags.includes(activeTag));
+      return catMatch && tagMatch;
+    });
+  }
+
+  function renderPosts() {
+    const filtered = getFilteredPosts();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    const start = (currentPage - 1) * POSTS_PER_PAGE;
+    const end = start + POSTS_PER_PAGE;
+    posts.forEach(post => post.style.display = 'none');
+    filtered.slice(start, end).forEach(post => post.style.display = 'flex');
+    renderPagination(totalPages);
+    setActiveButton(catButtons, activeCategory, 'data-category');
+    setActiveButton(tagButtons, activeTag, 'data-tag');
+  }
+
+  function renderPagination(totalPages) {
+    let html = '';
+    const showPageNums = true; // Set to false if you don't want page numbers in the buttons
+    if (totalPages > 1) {
+      if (currentPage > 1) {
+        html += `<a href="#" class="prev">«&nbsp;${i18n.prevPage}&nbsp;${showPageNums ? `${currentPage-1}/${totalPages}` : ''}</a>`;
+      }
+      if (currentPage < totalPages) {
+        html += `<a href="#" class="next">${i18n.nextPage}&nbsp;${showPageNums ? `${currentPage+1}/${totalPages}` : ''}&nbsp;»</a>`;
+      }
+    }
+    pagination.innerHTML = html;
+    // Pagination events
+    pagination.querySelectorAll('.prev').forEach(el => el.addEventListener('click', e => { e.preventDefault(); currentPage--; renderPosts(); }));
+    pagination.querySelectorAll('.next').forEach(el => el.addEventListener('click', e => { e.preventDefault(); currentPage++; renderPosts(); }));
+  }
+
+  // Toggle filter lists
+  document.querySelectorAll('.filter-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const list = document.getElementById(this.getAttribute('aria-controls'));
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      list.style.display = expanded ? 'none' : 'block';
+      // Update arrow direction
+      this.innerHTML = this.innerHTML.replace(expanded ? '▲' : '▼', expanded ? '▼' : '▲');
+    });
+  });
+
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeCategory = btn.dataset.category;
+      currentPage = 1;
+      renderPosts();
+    });
+  });
+
+  tagButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeTag = btn.dataset.tag;
+      currentPage = 1;
+      renderPosts();
+    });
+  });
+
+  renderPosts();
+});
+</script>
 
   <!-- FILTER STYLE -->
   <style>
-  /* Styling for the filter button groups */
   .filter-group {
     margin-bottom: 1.5rem;
   }
@@ -235,7 +247,7 @@
     width: 100%;
     background: none;
     border: none;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: bold;
     text-align: left;
     padding: 0.5rem 0;
@@ -254,6 +266,13 @@
     display: block;
     transition: display 0.2s;
   }
+  /* Styling for the filter button groups */
+  .filters h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
 
   /* Base style for all filter buttons */
   .filter-btn {
@@ -266,7 +285,6 @@
     border-radius: var(--radius); /* Use theme's border radius */
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-    font-size: 1rem;
   }
 
   /* Hover state for inactive buttons */

@@ -97,10 +97,10 @@ languages:
           name: "Search"
           url: "/search/"
           weight: 7
-        - identifier: archives
-          name: Archives
-          url: /archives/   
-          weight: 8
+        # - identifier: archives
+        #   name: Archives
+        #   url: /archives/   
+        #   weight: 8
         # - identifier: categories
         #   name: Categories
         #   url: /categories/
@@ -144,10 +144,10 @@ languages:
           name: "بحث"
           url: "/ar/search/"
           weight: 7
-        - identifier: archives
-          name: الأرشيف
-          url: /ar/archives/   
-          weight: 8
+        # - identifier: archives
+        #   name: الأرشيف
+        #   url: /ar/archives/   
+        #   weight: 8
 
 
 

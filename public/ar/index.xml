@@ -50,34 +50,6 @@
 &lt;p&gt;React.js هي مكتبة JavaScript مفتوحة المصدر تُستخدم لبناء واجهات المستخدم، خاصة لتطبيقات الصفحة الواحدة. فلسفتها الأساسية هي بنية المكونات، مما يسمح للمطورين ببناء أجزاء واجهة منفصلة وتجميعها معاً.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Test BTC Post</title>
-      <link>http://localhost:1313/ar/blog/posts/test-btc/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/test-btc/</guid>
-      <description>&lt;p&gt;try this&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>الأدوات لقديمة في تطوير الوب</title>
-      <link>http://localhost:1313/ar/blog/posts/old-post/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/old-post/</guid>
-      <description>&lt;p&gt;الأدوات لقديمة في تطوير الوب&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>تداول عملة لايتكوين</title>
-      <link>http://localhost:1313/ar/blog/posts/ttrading-ltc/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/ttrading-ltc/</guid>
-      <description>&lt;p&gt;اختبر هذا&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>منشور تجريبي</title>
-      <link>http://localhost:1313/ar/blog/posts/test-post/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/test-post/</guid>
-      <description>&lt;p&gt;هذا&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Next.js: سلاحك السري الجديد لبناء تطبيقات ويب مذهلة</title>
       <link>http://localhost:1313/ar/blog/posts/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
       <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>

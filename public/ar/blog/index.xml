@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Blog on Youzarsifya7</title>
+    <title>المدونة on Youzarsifya7</title>
     <link>http://localhost:1313/ar/blog/</link>
-    <description>Recent content in Blog on Youzarsifya7</description>
+    <description>Recent content in المدونة on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>ar</language>
     <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
@@ -41,34 +41,6 @@
       <description>&lt;p&gt;تم تطوير React.js وصيانتها من قبل فيسبوك (حالياً Meta)، وأصبحت واحدة من أشهر مكتبات JavaScript لبناء تطبيقات الويب الحديثة. سواء كنت تطور موقع صفحة واحدة بسيط أو تطبيق ويب معقد، توفر React مجموعة أدوات قوية لإنشاء واجهات مستخدم ديناميكية ومتجاوبة.&lt;/p&gt;
 &lt;h2 id=&#34;ما-هي-reactjs&#34;&gt;ما هي React.js؟&lt;/h2&gt;
 &lt;p&gt;React.js هي مكتبة JavaScript مفتوحة المصدر تُستخدم لبناء واجهات المستخدم، خاصة لتطبيقات الصفحة الواحدة. فلسفتها الأساسية هي بنية المكونات، مما يسمح للمطورين ببناء أجزاء واجهة منفصلة وتجميعها معاً.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Test BTC Post</title>
-      <link>http://localhost:1313/ar/blog/posts/test-btc/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/test-btc/</guid>
-      <description>&lt;p&gt;try this&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>الأدوات لقديمة في تطوير الوب</title>
-      <link>http://localhost:1313/ar/blog/posts/old-post/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/old-post/</guid>
-      <description>&lt;p&gt;الأدوات لقديمة في تطوير الوب&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>تداول عملة لايتكوين</title>
-      <link>http://localhost:1313/ar/blog/posts/ttrading-ltc/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/ttrading-ltc/</guid>
-      <description>&lt;p&gt;اختبر هذا&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>منشور تجريبي</title>
-      <link>http://localhost:1313/ar/blog/posts/test-post/</link>
-      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/test-post/</guid>
-      <description>&lt;p&gt;هذا&lt;/p&gt;</description>
     </item>
     <item>
       <title>Next.js: سلاحك السري الجديد لبناء تطبيقات ويب مذهلة</title>

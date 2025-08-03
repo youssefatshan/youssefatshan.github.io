@@ -2,3 +2,8 @@
 website_button: "Website"
 github_button: "GitHub"
 details_button: "Details"
+filterByCategory: "Filter by Category"
+filterByTag: "Filter by Tag"
+all: "All"
+prev_page: "Prev"
+next_page: "Next" 

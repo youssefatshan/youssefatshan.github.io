@@ -1,9 +1,9 @@
 ---
 date: '2025-07-12T16:46:01+03:00'
-draft: false
-title: 'Test BTC Post'
+draft: true
+title: 'منشور تجريبي - بتكوين'
 tags: ["BTC"]
-categories: ["Crypto"]
+categories: ["العملات المشفرة"]
 ---
 
-try this...
+اختبر هذا

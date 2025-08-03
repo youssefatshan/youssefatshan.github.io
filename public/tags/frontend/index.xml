@@ -50,6 +50,13 @@
 &lt;p&gt;React.js is an open-source JavaScript library used for building user interfaces, particularly for single-page applications. Its core philosophy is component-based architecture, which allows developers to build encapsulated pieces of UI and compose them together.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>my best website</title>
+      <link>http://localhost:1313/blog/posts/my-best-website/</link>
+      <pubDate>Wed, 12 Feb 2025 08:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/blog/posts/my-best-website/</guid>
+      <description>&lt;p&gt;My profile website&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Royal Platinum: Financial Services Company Website Design</title>
       <link>http://localhost:1313/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>

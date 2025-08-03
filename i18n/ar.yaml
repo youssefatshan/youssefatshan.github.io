@@ -2,3 +2,8 @@
 website_button: "الموقع"
 github_button: "جيت هاب"
 details_button: "التفاصيل"
+filterByCategory: "التصنيف حسب الفئة"
+filterByTag: "التصنيف حسب الوسم"
+all: "الكل"
+prev_page: "السابق"
+next_page: "التالي"
