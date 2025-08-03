@@ -1,30 +1,36 @@
 baseURL: "https://youssefatshan.github.io/"
-languageCode: en-us
+# languageCode: en-us
 title: Youzarsifya7
 theme: ["PaperMod"]
-
+# --- GLOBAL SETTINGS (Apply to ALL languages) ---
+defaultContentLanguage: en
+googleAnalytics: G-CK963X68CX # Add your Google Analytics ID here
+pagination:
+  pagerSize: 5 # Number of posts per page
 caches: 
   images: 
     dir: :cacheDir/images
-
-# Add your Google Analytics ID here
-googleAnalytics: G-CK963X68CX
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
 
 params:
+  # ShowMobileMenu: true
   # homeInfoParams:
   #   Title: "Hi Sweety"
   #   Content: Welcome to my website, where I share my thoughts and experiences on various topics. Feel free to explore and connect with me!
-  # --- For metadata ---
+  # --- Functional Parameters ---
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, Web Developer]
-  author: Youssef Atshan
-  # dateFormat: "January 2, 2006 at 3:04 PM"
   defaultTheme: auto # to switch between dark or light according to browser theme
+  ShowPageNums: true # to show page numbers in pagination (next and previous)
   ShowBreadCrumbs: false
   ShowShareButtons: true
   ShowSearch: true
+  author: Youssef Atshan # Global author for metadata
+  # dateFormat: "January 2, 2006 at 3:04 PM"
+  # --- Fuse.js Search Configuration ---
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -38,23 +44,6 @@ params:
     - tags
     - categories
     - permalink
-  # --------------
-  #Home Page
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: "Youssef Atshan"
-    subtitle: "Web Developer / ICT Engineer \U0001F44B"
-    imageUrl: "images/youzarsif-profile-img.jpg"
-    imageWidth: 200
-    imageHeight: 200
-    imageTitle: Developer #Appear on hover
-    bio: "I’m a passionate full-stack web developer and ICT engineer with strong experience in React.js, Node.js, and telecom solutions. I love building scalable digital products and solving real-world challenges with clean code."
-    # buttons:
-    #   - name: "Hire Me on Fiverr"
-    #     url: "https://www.fiverr.com/" # Replace with your Fiverr profile URL
-    #   - name: "Hire Me on Freelancer"
-    #     url: "https://www.freelancer.com/" # Replace with your Freelancer profile URL
-
   socialIcons:
     - name: github
       url: "https://github.com/youssefatshan"
@@ -67,34 +56,100 @@ params:
     - name: x
       url: "https://x.com/youzarsifya7"
 
-menu:
-  main:
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 5
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 6 
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
-    - identifier: archives
-      name: Archives
-      url: /archives/   
-      weight: 30
-    - name: "Search"
-      url: "/search/"
-      weight: 10
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content/en" # Tells Hugo to look in this folder for English content
+    # English-specific metadata and profile
+    params:
+      # --- Metadata for SEO & Social Sharing ---
+      title: "Youssef Atshan | Web Developer & ICT Engineer"
+      description: "The personal portfolio of Youssef Atshan, a full-stack web developer and ICT engineer specializing in React.js, Node.js, and modern web technologies. Explore my projects and articles."
+      keywords: [Blog, Portfolio, Web Developer, React.js, Node.js, ICT Engineer, Full-Stack]
+      # --- Home Page Profile Mode ---
+      profileMode:
+        enabled: true # needs to be explicitly set
+        title: "Youssef Atshan"
+        subtitle: "Web Developer / ICT Engineer \U0001F44B"
+        imageUrl: "images/youzarsif-profile-img.jpg"
+        imageWidth: 200
+        imageHeight: 200
+        imageTitle: Developer #Appear on hover
+        bio: "I’m a passionate full-stack web developer and ICT engineer with strong experience in React.js, Node.js, and telecom solutions. I love building scalable digital products and solving real-world challenges with clean code."
+        # buttons:
+        #   - name: "Hire Me on Fiverr"
+        #     url: "https://www.fiverr.com/" # Replace with your Fiverr profile URL
+        #   - name: "Hire Me on Freelancer"
+        #     url: "https://www.freelancer.com/" # Replace with your Freelancer profile URL
+    # English Menu
+    menu:
+      main:
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: 5
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 6 
+        - identifier: search
+          name: "Search"
+          url: "/search/"
+          weight: 7
+        - identifier: archives
+          name: Archives
+          url: /archives/   
+          weight: 8
+        # - identifier: categories
+        #   name: Categories
+        #   url: /categories/
+        #   weight: 10
+        # - identifier: tags
+        #   name: Tags
+        #   url: /tags/
+        #   weight: 20
 
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # necessary for search
+  ar:
+    languageName: "العربية"
+    weight: 2
+    languagedirection: rtl # This is the correct parameter for PaperMod's right-to-left layout
+    contentDir: "content/ar" # Folder for Arabic content
+    # Arabic-specific text, metadata, and profile
+    params:
+      title: "يوسف عطشان | مطور ويب ومهندس اتصالات"
+      description: "الملف الشخصي ليوسف عطشان، مطور ويب متخصص في React.js, Node.js وتقنيات الويب الحديثة."
+      keywords: [مدونة, ملف شخصي, مطور ويب]
+      profileMode:
+        enabled: true
+        title: "يوسف عطشان"
+        subtitle: "مطور ويب / مهندس تكنلوجيا المعلومات والاتصالات 👋"
+        imageUrl: "/images/youzarsif-profile-img.jpg" # Use a leading slash for images
+        imageWidth: 200
+        imageHeight: 200
+        imageTitle: مطور ويب
+        bio: "أنا مطور ويب متكامل ومهندس تكنولوجيا معلومات واتصالات شغوف، ولديّ خبرة واسعة في React.js وNode.js وحلول الاتصالات. أستمتع ببناء منتجات رقمية قابلة للتطوير وحل تحديات العالم الحقيقي باستخدام أكواد نظيفة."
+    # Arabic Menu
+    menu:
+      main:
+        - identifier: projects
+          name: المشاريع
+          url: /ar/projects/
+          weight: 5
+        - identifier: blog
+          name: المدونة
+          url: /ar/blog/
+          weight: 6 
+        - identifier: search
+          name: "بحث"
+          url: "/ar/search/"
+          weight: 7
+        - identifier: archives
+          name: الأرشيف
+          url: /ar/archives/   
+          weight: 8
+
+
+
+
+

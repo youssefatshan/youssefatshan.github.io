@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Leaflet.js on Youzarsifya7</title>
+    <link>http://localhost:1313/ar/tags/leaflet.js/</link>
+    <description>Recent content in Leaflet.js on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/tags/leaflet.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>أولي-بايتس: نموذج أولي لموقع سلسلة وجبات سريعة</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-prototype-002/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-prototype-002/</guid>
+      <description>نموذج أولي متجاوب بالكامل لعلامة وجبات سريعة، تم تصميمه وتطويره من الصفر. يتضمن خرائط تفاعلية باستخدام Leaflet.js وتصميم واجهات وتجربة مستخدم مخصص بالكامل.</description>
+    </item>
+  </channel>
+</rss>

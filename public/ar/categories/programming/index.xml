@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on Youzarsifya7</title>
+    <link>http://localhost:1313/ar/categories/programming/</link>
+    <description>Recent content in Programming on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Tue, 29 Jul 2025 08:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vite: The Fastest Front-End Tooling You Didn’t Know You Needed</title>
+      <link>http://localhost:1313/ar/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</link>
+      <pubDate>Tue, 29 Jul 2025 08:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/ar/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</guid>
+      <description>&lt;h1 id=&#34;vite-the-fastest-front-end-tooling-you-didnt-know-you-needed&#34;&gt;Vite: The Fastest Front-End Tooling You Didn’t Know You Needed&lt;/h1&gt;
+&lt;p&gt;Vite (pronounced &lt;em&gt;vite&lt;/em&gt;, like “vite” in French for “fast”) is a modern build tool that has revolutionized how developers build front-end applications. Created by Evan You (the author of Vue.js), Vite provides lightning-fast development and optimized production builds with minimal configuration.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-makes-vite-so-fast&#34;&gt;🚀 What Makes Vite So Fast?&lt;/h2&gt;
+&lt;p&gt;Vite leverages native 
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+  ES Modules (ESM)
+&lt;/a&gt;
+ in modern browsers during development. Instead of bundling all your JavaScript files into one giant file, Vite only sends what&amp;rsquo;s needed to the browser — instantly.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

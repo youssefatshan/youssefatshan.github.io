@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vite on Youzarsifya7</title>
+    <link>http://localhost:1313/ar/tags/vite/</link>
+    <description>Recent content in Vite on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Tue, 29 Jul 2025 08:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/tags/vite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vite: أسرع أداة تطوير للواجهات الأمامية قد لا تعلم أنك بحاجة إليها</title>
+      <link>http://localhost:1313/ar/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</link>
+      <pubDate>Tue, 29 Jul 2025 08:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/ar/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</guid>
+      <description>&lt;h1 id=&#34;vite-أسرع-أداة-تطوير-للواجهات-الأمامية-ربما-لم-تكن-تعرف-أنك-بحاجة-إليها&#34;&gt;Vite: أسرع أداة تطوير للواجهات الأمامية ربما لم تكن تعرف أنك بحاجة إليها&lt;/h1&gt;
+&lt;p&gt;Vite (تُنطق &amp;ldquo;فيت&amp;rdquo; مثل كلمة &amp;ldquo;سريع&amp;rdquo; بالفرنسية) هي أداة بناء حديثة أحدثت ثورة في طريقة تطوير تطبيقات الواجهات الأمامية. أنشأها Evan You (مؤلف Vue.js)، وتوفر Vite تجربة تطوير فائقة السرعة وبناء إنتاجي محسن مع أقل قدر من الإعداد.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-لماذا-vite-سريعة-جدا&#34;&gt;🚀 لماذا Vite سريعة جداً؟&lt;/h2&gt;
+&lt;p&gt;تستفيد Vite من 
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+  وحدات ES الأصلية (ESM)
+&lt;/a&gt;
+ في المتصفحات الحديثة أثناء التطوير. بدلاً من تجميع جميع ملفات JavaScript في ملف واحد ضخم، ترسل Vite فقط ما يحتاجه المتصفح — فوراً.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>أبراج بلاتينوم: موقع لحلول الألياف الضوئية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-company-01/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-company-01/</guid>
+      <description>تم تطوير موقع إلكتروني عصري واحترافي لشركة متخصصة في حلول الألياف الضوئية والشبكات، بهدف إبراز خبراتهم التقنية وتعزيز حضورهم الرقمي.</description>
+    </item>
+    <item>
+      <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-company-02/</guid>
+      <description>موقع واجهات مستخدم وتجربة مستخدم عصري وأنيق لشركة خدمات مالية، تم بناؤه باستخدام React.js وTailwind CSS لترجمة تصميم Figma إلى موقع متجاوب ودقيق التفاصيل.</description>
+    </item>
+  </channel>
+</rss>

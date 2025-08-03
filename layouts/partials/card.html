@@ -22,16 +22,16 @@
       
       {{/* Website button - only shows if liveUrl exists */}}
       {{- with .Params.liveUrl }}
-      <a href="{{ . }}" class="card-btn" target="_blank" rel="noopener noreferrer">Website</a>
+      <a href="{{ . }}" class="card-btn" target="_blank" rel="noopener noreferrer">{{ i18n "website_button" }}</a>
       {{- end }}
 
       {{/* GitHub button - only shows if repoUrl exists */}}
       {{- with .Params.repoUrl }}
-      <a href="{{ . }}" class="card-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="{{ . }}" class="card-btn" target="_blank" rel="noopener noreferrer">{{ i18n "github_button" }}</a>
       {{- end }}
       
       {{/* Details button - always shows */}}
-      <a href="{{ .Permalink }}" class="card-btn details-btn">Details</a>
+      <a href="{{ .Permalink }}" class="card-btn details-btn">{{ i18n "details_button" }}</a>
 
     </div>
   </div>

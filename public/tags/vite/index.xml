@@ -5,14 +5,14 @@
     <link>http://localhost:1313/tags/vite/</link>
     <description>Recent content in Vite on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 29 Jul 2025 08:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/vite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vite: The Fastest Front-End Tooling You Didn’t Know You Needed</title>
-      <link>http://localhost:1313/blog/getting-started-with-vite-the-next-gen-frontend-build-tool/</link>
+      <link>http://localhost:1313/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</link>
       <pubDate>Tue, 29 Jul 2025 08:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/blog/getting-started-with-vite-the-next-gen-frontend-build-tool/</guid>
+      <guid>http://localhost:1313/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</guid>
       <description>&lt;h1 id=&#34;vite-the-fastest-front-end-tooling-you-didnt-know-you-needed&#34;&gt;Vite: The Fastest Front-End Tooling You Didn’t Know You Needed&lt;/h1&gt;
 &lt;p&gt;Vite (pronounced &lt;em&gt;vite&lt;/em&gt;, like “vite” in French for “fast”) is a modern build tool that has revolutionized how developers build front-end applications. Created by Evan You (the author of Vue.js), Vite provides lightning-fast development and optimized production builds with minimal configuration.&lt;/p&gt;
 &lt;hr&gt;
@@ -31,7 +31,7 @@
       <description>Developed a sleek and modern corporate website for a fiber optics and network solutions provider, designed to highlight their technical expertise and elevate their digital presence.</description>
     </item>
     <item>
-      <title>Royal Platinum: Financial Services UI/UX Website</title>
+      <title>Royal Platinum: Financial Services Company Website Design</title>
       <link>http://localhost:1313/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-company-02/</guid>

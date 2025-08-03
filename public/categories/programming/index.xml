@@ -5,14 +5,24 @@
     <link>http://localhost:1313/categories/programming/</link>
     <description>Recent content in Programming on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jul 2025 08:00:00 +0300</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tailwind CSS in 2025: Fast, Flexible &amp; Future-Ready</title>
+      <link>http://localhost:1313/blog/posts/tailwind-css-in-2025-fast-flexible--future-ready/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/tailwind-css-in-2025-fast-flexible--future-ready/</guid>
+      <description>&lt;h1 id=&#34;tailwind-css-in-2025-fast-flexible--future-ready&#34;&gt;Tailwind CSS in 2025: Fast, Flexible &amp;amp; Future-Ready&lt;/h1&gt;
+&lt;p&gt;Tailwind CSS continues to be one of the most powerful and popular CSS frameworks. In 2025, version 4.x brings innovations that make it faster, more intuitive, and perfectly aligned with modern web standards.&lt;/p&gt;
+&lt;h2 id=&#34;what-makes-tailwind-unique&#34;&gt;What Makes Tailwind Unique?&lt;/h2&gt;
+&lt;p&gt;At its core, Tailwind embraces a &lt;strong&gt;utility-first&lt;/strong&gt; approach. Instead of pre-built components like buttons or cards, you compose styles using small, atomic classes directly in your HTML—e.g., &lt;code&gt;bg-blue-500&lt;/code&gt;, &lt;code&gt;px-4&lt;/code&gt;, and &lt;code&gt;rounded-lg&lt;/code&gt;. This approach dramatically accelerates prototyping, eliminates the need for custom CSS files, and fosters a consistent design system.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Vite: The Fastest Front-End Tooling You Didn’t Know You Needed</title>
-      <link>http://localhost:1313/blog/getting-started-with-vite-the-next-gen-frontend-build-tool/</link>
+      <link>http://localhost:1313/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</link>
       <pubDate>Tue, 29 Jul 2025 08:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/blog/getting-started-with-vite-the-next-gen-frontend-build-tool/</guid>
+      <guid>http://localhost:1313/blog/posts/getting-started-with-vite-the-next-gen-frontend-build-tool/</guid>
       <description>&lt;h1 id=&#34;vite-the-fastest-front-end-tooling-you-didnt-know-you-needed&#34;&gt;Vite: The Fastest Front-End Tooling You Didn’t Know You Needed&lt;/h1&gt;
 &lt;p&gt;Vite (pronounced &lt;em&gt;vite&lt;/em&gt;, like “vite” in French for “fast”) is a modern build tool that has revolutionized how developers build front-end applications. Created by Evan You (the author of Vue.js), Vite provides lightning-fast development and optimized production builds with minimal configuration.&lt;/p&gt;
 &lt;hr&gt;
@@ -25,25 +35,25 @@
     </item>
     <item>
       <title>React.js: The Front-End Powerhouse You Need in 2025</title>
-      <link>http://localhost:1313/blog/reactjs-blog-post/</link>
+      <link>http://localhost:1313/blog/posts/reactjs-blog-post/</link>
       <pubDate>Sat, 12 Jul 2025 17:30:00 +0300</pubDate>
-      <guid>http://localhost:1313/blog/reactjs-blog-post/</guid>
+      <guid>http://localhost:1313/blog/posts/reactjs-blog-post/</guid>
       <description>&lt;p&gt;React.js, developed and maintained by Facebook (now Meta), has become one of the most popular JavaScript libraries for building modern web applications. Whether you&amp;rsquo;re crafting a simple single-page website or a complex web app, React provides a powerful toolkit for creating dynamic and responsive user interfaces.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-reactjs&#34;&gt;What is React.js?&lt;/h2&gt;
 &lt;p&gt;React.js is an open-source JavaScript library used for building user interfaces, particularly for single-page applications. Its core philosophy is component-based architecture, which allows developers to build encapsulated pieces of UI and compose them together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Old tools for web development</title>
-      <link>http://localhost:1313/blog/old-post/</link>
+      <link>http://localhost:1313/blog/posts/old-post/</link>
       <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
-      <guid>http://localhost:1313/blog/old-post/</guid>
+      <guid>http://localhost:1313/blog/posts/old-post/</guid>
       <description>&lt;p&gt;Old tools for web development&lt;/p&gt;</description>
     </item>
     <item>
       <title>Next.js Is Your New Secret Weapon for Building Awesome Web Apps</title>
-      <link>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
+      <link>http://localhost:1313/blog/posts/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</link>
       <pubDate>Sat, 12 Jul 2025 16:09:44 +0300</pubDate>
-      <guid>http://localhost:1313/blog/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</guid>
+      <guid>http://localhost:1313/blog/posts/next.js-is-your-new-secret-weapon-for-building-awesome-web-apps/</guid>
       <description>&lt;h1 id=&#34;why-nextjs-is-your-new-secret-weapon-for-building-awesome-web-apps-&#34;&gt;Why Next.js is Your New Secret Weapon for Building Awesome Web Apps 🚀&lt;/h1&gt;
 &lt;p&gt;!http://googleusercontent.com/image_collection/image_retrieval/12298402712055045150&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re building a web application today, you&amp;rsquo;re juggling a lot. You need speed, great SEO, and a fantastic user experience, all without wanting to pull your hair out during development. This is where &lt;strong&gt;Next.js&lt;/strong&gt;, the React framework, comes in and completely changes the game. It’s not just another tool; it’s a powerhouse that makes building sophisticated, high-performance web apps easier and faster.&lt;/p&gt;</description>

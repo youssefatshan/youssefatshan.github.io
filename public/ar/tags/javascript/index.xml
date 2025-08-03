@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JavaScript on Youzarsifya7</title>
+    <link>http://localhost:1313/ar/tags/javascript/</link>
+    <description>Recent content in JavaScript on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Sat, 12 Jul 2025 17:30:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React.js: عملاق الواجهات الأمامية الذي تحتاجه في 2025</title>
+      <link>http://localhost:1313/ar/blog/posts/reactjs-blog-post/</link>
+      <pubDate>Sat, 12 Jul 2025 17:30:00 +0300</pubDate>
+      <guid>http://localhost:1313/ar/blog/posts/reactjs-blog-post/</guid>
+      <description>&lt;p&gt;تم تطوير React.js وصيانتها من قبل فيسبوك (حالياً Meta)، وأصبحت واحدة من أشهر مكتبات JavaScript لبناء تطبيقات الويب الحديثة. سواء كنت تطور موقع صفحة واحدة بسيط أو تطبيق ويب معقد، توفر React مجموعة أدوات قوية لإنشاء واجهات مستخدم ديناميكية ومتجاوبة.&lt;/p&gt;
+&lt;h2 id=&#34;ما-هي-reactjs&#34;&gt;ما هي React.js؟&lt;/h2&gt;
+&lt;p&gt;React.js هي مكتبة JavaScript مفتوحة المصدر تُستخدم لبناء واجهات المستخدم، خاصة لتطبيقات الصفحة الواحدة. فلسفتها الأساسية هي بنية المكونات، مما يسمح للمطورين ببناء أجزاء واجهة منفصلة وتجميعها معاً.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>الأدوات لقديمة في تطوير الوب</title>
+      <link>http://localhost:1313/ar/blog/posts/old-post/</link>
+      <pubDate>Sat, 12 Jul 2025 16:46:01 +0300</pubDate>
+      <guid>http://localhost:1313/ar/blog/posts/old-post/</guid>
+      <description>&lt;p&gt;الأدوات لقديمة في تطوير الوب&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>أبراج بلاتينوم: موقع لحلول الألياف الضوئية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-company-01/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-company-01/</guid>
+      <description>تم تطوير موقع إلكتروني عصري واحترافي لشركة متخصصة في حلول الألياف الضوئية والشبكات، بهدف إبراز خبراتهم التقنية وتعزيز حضورهم الرقمي.</description>
+    </item>
+    <item>
+      <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-company-02/</guid>
+      <description>موقع واجهات مستخدم وتجربة مستخدم عصري وأنيق لشركة خدمات مالية، تم بناؤه باستخدام React.js وTailwind CSS لترجمة تصميم Figma إلى موقع متجاوب ودقيق التفاصيل.</description>
+    </item>
+    <item>
+      <title>أولي-بايتس: نموذج أولي لموقع سلسلة وجبات سريعة</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-prototype-002/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-prototype-002/</guid>
+      <description>نموذج أولي متجاوب بالكامل لعلامة وجبات سريعة، تم تصميمه وتطويره من الصفر. يتضمن خرائط تفاعلية باستخدام Leaflet.js وتصميم واجهات وتجربة مستخدم مخصص بالكامل.</description>
+    </item>
+    <item>
+      <title>برش-ستروكس: نموذج أولي لمتجر منتجات العناية بالبشرة</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-prototype-01/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-prototype-01/</guid>
+      <description>نموذج أولي لمتجر إلكتروني متجاوب لعلامة تجميل، تم تطويره باستخدام React.js ويعرض منتجات وصفحات تفاصيل تعتمد على بيانات JSON.</description>
+    </item>
+  </channel>
+</rss>

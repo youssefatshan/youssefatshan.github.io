@@ -1,0 +1,106 @@
+baseURL: "https://youssefatshan.github.io/"
+languageCode: en-us
+title: Youzarsifya7
+theme: ["PaperMod"]
+pagination:
+  pagerSize: 5 # Number of posts per page
+caches: 
+  images: 
+    dir: :cacheDir/images
+
+# Add your Google Analytics ID here
+googleAnalytics: G-CK963X68CX
+
+params:
+  ShowMobileMenu: true
+  # homeInfoParams:
+  #   Title: "Hi Sweety"
+  #   Content: Welcome to my website, where I share my thoughts and experiences on various topics. Feel free to explore and connect with me!
+  # --- Functional Parameters ---
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  ShowPageNums: true # to show page numbers in pagination (next and previous)
+  ShowBreadCrumbs: false
+  ShowShareButtons: true
+  ShowSearch: true
+  # dateFormat: "January 2, 2006 at 3:04 PM"
+  # --- Metadata for SEO & Social Sharing ---
+  title: "Youssef Atshan | Web Developer & ICT Engineer"
+  description: "The personal portfolio of Youssef Atshan, a full-stack web developer and ICT engineer specializing in React.js, Node.js, and modern web technologies. Explore my projects and articles."
+  keywords: [Blog, Portfolio, Web Developer, React.js, Node.js, ICT Engineer, Full-Stack]
+  author: Youssef Atshan
+  # --- Fuse.js Search Configuration ---
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    ignoreLocation: true
+    threshold: 0.3
+    minMatchCharLength: 0
+    keys:
+    - title
+    - summary
+    - content
+    - tags
+    - categories
+    - permalink
+  # --- Home Page Profile Mode ---
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Youssef Atshan"
+    subtitle: "Web Developer / ICT Engineer \U0001F44B"
+    imageUrl: "images/youzarsif-profile-img.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: Developer #Appear on hover
+    bio: "I’m a passionate full-stack web developer and ICT engineer with strong experience in React.js, Node.js, and telecom solutions. I love building scalable digital products and solving real-world challenges with clean code."
+    # buttons:
+    #   - name: "Hire Me on Fiverr"
+    #     url: "https://www.fiverr.com/" # Replace with your Fiverr profile URL
+    #   - name: "Hire Me on Freelancer"
+    #     url: "https://www.freelancer.com/" # Replace with your Freelancer profile URL
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/youssefatshan"
+    - name: facebook
+      url: "https://facebook.com/YouzarsifYA7"
+    - name: telegram
+      url: "https://t.me/Youzarsif_YA7"
+    - name: linkedin
+      url: "https://linkedin.com/in/youzarsifya7"
+    - name: x
+      url: "https://x.com/youzarsifya7"
+
+menu:
+  main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 5
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 6 
+    - identifier: search
+      name: "Search"
+      url: "/search/"
+      weight: 7
+    - identifier: archives
+      name: Archives
+      url: /archives/   
+      weight: 8
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 10
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    # weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+

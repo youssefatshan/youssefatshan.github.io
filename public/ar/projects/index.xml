@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>مشاريعي on Youzarsifya7</title>
+    <link>http://localhost:1313/ar/projects/</link>
+    <description>Recent content in مشاريعي on Youzarsifya7</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>ar</language>
+    <lastBuildDate>Sun, 13 Jul 2025 11:20:03 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>القمر الرقمي: نموذج أولي لشركة ناشئة في مجال التكنولوجيا الخيالية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-prototype-012/</link>
+      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-prototype-012/</guid>
+      <description>نموذج أولي متجاوب لشركة تقنية خيالية، يبرز بنية معمارية قائمة على المكونات باستخدام Next.js، وتصميم متجاوب مع Tailwind CSS، وتحريكات تمرير أنيقة.</description>
+    </item>
+    <item>
+      <title>أبراج بلاتينوم: موقع لحلول الألياف الضوئية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-company-01/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-company-01/</guid>
+      <description>تم تطوير موقع إلكتروني عصري واحترافي لشركة متخصصة في حلول الألياف الضوئية والشبكات، بهدف إبراز خبراتهم التقنية وتعزيز حضورهم الرقمي.</description>
+    </item>
+    <item>
+      <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-company-02/</guid>
+      <description>موقع واجهات مستخدم وتجربة مستخدم عصري وأنيق لشركة خدمات مالية، تم بناؤه باستخدام React.js وTailwind CSS لترجمة تصميم Figma إلى موقع متجاوب ودقيق التفاصيل.</description>
+    </item>
+    <item>
+      <title>أولي-بايتس: نموذج أولي لموقع سلسلة وجبات سريعة</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-prototype-002/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-prototype-002/</guid>
+      <description>نموذج أولي متجاوب بالكامل لعلامة وجبات سريعة، تم تصميمه وتطويره من الصفر. يتضمن خرائط تفاعلية باستخدام Leaflet.js وتصميم واجهات وتجربة مستخدم مخصص بالكامل.</description>
+    </item>
+    <item>
+      <title>برش-ستروكس: نموذج أولي لمتجر منتجات العناية بالبشرة</title>
+      <link>http://localhost:1313/ar/projects/ya7-project-prototype-01/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ar/projects/ya7-project-prototype-01/</guid>
+      <description>نموذج أولي لمتجر إلكتروني متجاوب لعلامة تجميل، تم تطويره باستخدام React.js ويعرض منتجات وصفحات تفاصيل تعتمد على بيانات JSON.</description>
+    </item>
+  </channel>
+</rss>
