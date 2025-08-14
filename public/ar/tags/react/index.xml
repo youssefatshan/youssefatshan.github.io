@@ -6,14 +6,14 @@
     <description>Recent content in React on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>ar</language>
-    <lastBuildDate>Sun, 13 Jul 2025 11:20:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ar/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>القمر الرقمي: نموذج أولي لشركة ناشئة في مجال التكنولوجيا الخيالية</title>
+      <title>Cyber Moon: Fictional Tech Startup Prototype</title>
       <link>http://localhost:1313/ar/projects/ya7-project-prototype-012/</link>
-      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-prototype-012/</guid>
-      <description>نموذج أولي متجاوب لشركة تقنية خيالية، يبرز بنية معمارية قائمة على المكونات باستخدام Next.js، وتصميم متجاوب مع Tailwind CSS، وتحريكات تمرير أنيقة.</description>
+      <description>A complete case study on designing and developing a responsive, brand-focused tech startup prototype with Next.js and Tailwind CSS, featuring dark mode and scroll-based animations.</description>
     </item>
     <item>
       <title>React.js: عملاق الواجهات الأمامية الذي تحتاجه في 2025</title>
@@ -25,32 +25,32 @@
 &lt;p&gt;React.js هي مكتبة JavaScript مفتوحة المصدر تُستخدم لبناء واجهات المستخدم، خاصة لتطبيقات الصفحة الواحدة. فلسفتها الأساسية هي بنية المكونات، مما يسمح للمطورين ببناء أجزاء واجهة منفصلة وتجميعها معاً.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>أبراج بلاتينوم: موقع لحلول الألياف الضوئية</title>
+      <title>أبراج بلاتينيوم: موقع حلول الألياف الضوئية</title>
       <link>http://localhost:1313/ar/projects/ya7-project-company-01/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-company-01/</guid>
-      <description>تم تطوير موقع إلكتروني عصري واحترافي لشركة متخصصة في حلول الألياف الضوئية والشبكات، بهدف إبراز خبراتهم التقنية وتعزيز حضورهم الرقمي.</description>
+      <description>دراسة حالة كاملة حول تصميم وتطوير موقع إلكتروني حديث ومتجاوب لشركة رائدة في حلول الألياف الضوئية في سوريا، تم بناؤه باستخدام React.js وVite.</description>
     </item>
     <item>
-      <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
+      <title>رويال بلاتينيوم: تصميم واجهة موقع لشركة خدمات مالية</title>
       <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-company-02/</guid>
-      <description>موقع واجهات مستخدم وتجربة مستخدم عصري وأنيق لشركة خدمات مالية، تم بناؤه باستخدام React.js وTailwind CSS لترجمة تصميم Figma إلى موقع متجاوب ودقيق التفاصيل.</description>
+      <description>دراسة حالة حول تحويل تصميم Figma احترافي إلى نموذج أولي دقيق لشركة خدمات مالية باستخدام React.js وTailwind CSS، مع التركيز على واجهة نظيفة ومكونات قابلة لإعادة الاستخدام.</description>
     </item>
     <item>
       <title>أولي-بايتس: نموذج أولي لموقع سلسلة وجبات سريعة</title>
       <link>http://localhost:1313/ar/projects/ya7-project-prototype-002/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-prototype-002/</guid>
-      <description>نموذج أولي متجاوب بالكامل لعلامة وجبات سريعة، تم تصميمه وتطويره من الصفر. يتضمن خرائط تفاعلية باستخدام Leaflet.js وتصميم واجهات وتجربة مستخدم مخصص بالكامل.</description>
+      <description>Responsive fast-food brand prototype built with React.js, featuring interactive maps via Leaflet.js, a custom UI/UX, and optimized performance.</description>
     </item>
     <item>
       <title>برش-ستروكس: نموذج أولي لمتجر منتجات العناية بالبشرة</title>
       <link>http://localhost:1313/ar/projects/ya7-project-prototype-01/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-prototype-01/</guid>
-      <description>نموذج أولي لمتجر إلكتروني متجاوب لعلامة تجميل، تم تطويره باستخدام React.js ويعرض منتجات وصفحات تفاصيل تعتمد على بيانات JSON.</description>
+      <description>دراسة حالة حول تصميم وتطوير نموذج أولي لمتجر إلكتروني متجاوب لعلامة تجارية فاخرة للعناية بالبشرة، تم بناؤه باستخدام React.js ويعتمد على كتالوج منتجات مدعوم بملف JSON.</description>
     </item>
   </channel>
 </rss>

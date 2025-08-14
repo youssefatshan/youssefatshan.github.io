@@ -378,4 +378,28 @@ h1, h2, h3, h4, h5, h6, .post-title {
   }
 }
 
+/* --- START: RTL Fix for Feature Spotlight Arrows --- */
+
+/* This media query makes the RTL fix apply ONLY to screens wider than 768px */
+@media (min-width: 769px) {
+  /* This targets the page ONLY when the language is Arabic (RTL) */
+  :lang(ar) .feature-spotlight.left .feature-callout::before {
+      /* For a left-aligned item in RTL, the arrow should be on the right */
+      right: -11px;
+      left: auto; /* Reset the left property */
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent var(--border);
+  }
+
+  :lang(ar) .feature-spotlight.right .feature-callout::before {
+      /* For a right-aligned item in RTL, the arrow should be on the left */
+      left: -11px;
+      right: auto; /* Reset the right property */
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--border) transparent transparent;
+  }
+}
+
+/* --- END: RTL Fix for Feature Spotlight Arrows --- */
+
 /* --- END: Feature Spotlight Styles --- */

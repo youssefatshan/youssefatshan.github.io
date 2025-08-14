@@ -19,18 +19,18 @@
 &lt;p&gt;في جوهرها، تعتمد Tailwind على منهجية &lt;strong&gt;الأدوات أولاً&lt;/strong&gt;. بدلاً من مكونات جاهزة مثل الأزرار أو البطاقات، تقوم بتكوين الأنماط باستخدام كلاسات صغيرة ومحددة مباشرة في HTML الخاص بك—مثل &lt;code&gt;bg-blue-500&lt;/code&gt;، &lt;code&gt;px-4&lt;/code&gt;، و&lt;code&gt;rounded-lg&lt;/code&gt;. هذا النهج يسرّع عملية النمذجة بشكل كبير، ويُلغي الحاجة لملفات CSS مخصصة، ويعزز نظام تصميم متسق.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>القمر الرقمي: نموذج أولي لشركة ناشئة في مجال التكنولوجيا الخيالية</title>
+      <title>Cyber Moon: Fictional Tech Startup Prototype</title>
       <link>http://localhost:1313/ar/projects/ya7-project-prototype-012/</link>
-      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-prototype-012/</guid>
-      <description>نموذج أولي متجاوب لشركة تقنية خيالية، يبرز بنية معمارية قائمة على المكونات باستخدام Next.js، وتصميم متجاوب مع Tailwind CSS، وتحريكات تمرير أنيقة.</description>
+      <description>A complete case study on designing and developing a responsive, brand-focused tech startup prototype with Next.js and Tailwind CSS, featuring dark mode and scroll-based animations.</description>
     </item>
     <item>
-      <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
+      <title>رويال بلاتينيوم: تصميم واجهة موقع لشركة خدمات مالية</title>
       <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-company-02/</guid>
-      <description>موقع واجهات مستخدم وتجربة مستخدم عصري وأنيق لشركة خدمات مالية، تم بناؤه باستخدام React.js وTailwind CSS لترجمة تصميم Figma إلى موقع متجاوب ودقيق التفاصيل.</description>
+      <description>دراسة حالة حول تحويل تصميم Figma احترافي إلى نموذج أولي دقيق لشركة خدمات مالية باستخدام React.js وTailwind CSS، مع التركيز على واجهة نظيفة ومكونات قابلة لإعادة الاستخدام.</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>http://localhost:1313/ar/projects/ya7-project-prototype-002/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-prototype-002/</guid>
-      <description>نموذج أولي متجاوب بالكامل لعلامة وجبات سريعة، تم تصميمه وتطويره من الصفر. يتضمن خرائط تفاعلية باستخدام Leaflet.js وتصميم واجهات وتجربة مستخدم مخصص بالكامل.</description>
+      <description>Responsive fast-food brand prototype built with React.js, featuring interactive maps via Leaflet.js, a custom UI/UX, and optimized performance.</description>
     </item>
   </channel>
 </rss>

@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ar/tags/css3/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>أبراج بلاتينوم: موقع لحلول الألياف الضوئية</title>
+      <title>أبراج بلاتينيوم: موقع حلول الألياف الضوئية</title>
       <link>http://localhost:1313/ar/projects/ya7-project-company-01/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-company-01/</guid>
-      <description>تم تطوير موقع إلكتروني عصري واحترافي لشركة متخصصة في حلول الألياف الضوئية والشبكات، بهدف إبراز خبراتهم التقنية وتعزيز حضورهم الرقمي.</description>
+      <description>دراسة حالة كاملة حول تصميم وتطوير موقع إلكتروني حديث ومتجاوب لشركة رائدة في حلول الألياف الضوئية في سوريا، تم بناؤه باستخدام React.js وVite.</description>
     </item>
   </channel>
 </rss>

@@ -6,14 +6,14 @@
     <description>Recent content in AOS on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>ar</language>
-    <lastBuildDate>Sun, 13 Jul 2025 11:20:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ar/tags/aos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>القمر الرقمي: نموذج أولي لشركة ناشئة في مجال التكنولوجيا الخيالية</title>
+      <title>Cyber Moon: Fictional Tech Startup Prototype</title>
       <link>http://localhost:1313/ar/projects/ya7-project-prototype-012/</link>
-      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-prototype-012/</guid>
-      <description>نموذج أولي متجاوب لشركة تقنية خيالية، يبرز بنية معمارية قائمة على المكونات باستخدام Next.js، وتصميم متجاوب مع Tailwind CSS، وتحريكات تمرير أنيقة.</description>
+      <description>A complete case study on designing and developing a responsive, brand-focused tech startup prototype with Next.js and Tailwind CSS, featuring dark mode and scroll-based animations.</description>
     </item>
   </channel>
 </rss>

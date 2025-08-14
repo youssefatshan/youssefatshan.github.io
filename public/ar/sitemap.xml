@@ -136,7 +136,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ar/tags/aos/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -148,8 +148,21 @@
                 href="http://localhost:1313/ar/tags/aos/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ar/projects/ya7-project-prototype-012/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/projects/ya7-project-prototype-012/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/projects/ya7-project-prototype-012/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ar/tags/next.js/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -162,7 +175,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ar/tags/react/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -175,7 +188,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ar/tags/ui/ux/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -188,7 +201,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ar/tags/vercel/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -200,21 +213,8 @@
                 href="http://localhost:1313/ar/tags/vercel/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ar/projects/ya7-project-prototype-012/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/projects/ya7-project-prototype-012/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://localhost:1313/ar/projects/ya7-project-prototype-012/"
-                />
-  </url><url>
     <loc>http://localhost:1313/ar/projects/</loc>
-    <lastmod>2025-07-13T11:20:03+00:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

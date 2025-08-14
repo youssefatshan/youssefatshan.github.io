@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ar/tags/figma/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
+      <title>رويال بلاتينيوم: تصميم واجهة موقع لشركة خدمات مالية</title>
       <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ar/projects/ya7-project-company-02/</guid>
-      <description>موقع واجهات مستخدم وتجربة مستخدم عصري وأنيق لشركة خدمات مالية، تم بناؤه باستخدام React.js وTailwind CSS لترجمة تصميم Figma إلى موقع متجاوب ودقيق التفاصيل.</description>
+      <description>دراسة حالة حول تحويل تصميم Figma احترافي إلى نموذج أولي دقيق لشركة خدمات مالية باستخدام React.js وTailwind CSS، مع التركيز على واجهة نظيفة ومكونات قابلة لإعادة الاستخدام.</description>
     </item>
   </channel>
 </rss>
