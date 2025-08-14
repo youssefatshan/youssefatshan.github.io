@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6, .post-title {
 
 /* Ending: Apply Custom Arabic Font --- */
 
-/* --- Feature Spotlight with Callout Arrows --- */
+/* --- START: Feature Spotlight with Callout Arrows (Final Version) --- */
 
 .feature-callout {
     position: relative;
@@ -326,27 +326,56 @@ h1, h2, h3, h4, h5, h6, .post-title {
     border: 1px solid var(--border);
 }
 
-/* This creates the triangle/arrow shape */
+/* Base pseudo-element for the arrow */
 .feature-callout::before {
     content: '';
     position: absolute;
-    top: 30px; /* Adjust vertical position of the arrow */
     width: 0; 
     height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-style: solid;
 }
 
-/* Style for arrows when text is on the RIGHT (image on the left) */
+/* --- DESKTOP STYLES (Screen width > 768px) --- */
+
+/* Arrow when text is on the RIGHT (image on left) */
 .feature-spotlight.left .feature-callout::before {
-    left: -10px; /* Position arrow on the left side of the box */
-    border-right: 10px solid var(--border);
+    top: 30px;
+    left: -11px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--border) transparent transparent;
 }
 
-/* Style for arrows when text is on the LEFT (image on the right) */
+/* Arrow when text is on the LEFT (image on a right) */
 .feature-spotlight.right .feature-callout::before {
-    right: -10px; /* Position arrow on the right side of the box */
-    border-left: 10px solid var(--border);
+    top: 30px;
+    right: -11px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--border);
 }
 
-/* --- ENDED: Feature Spotlight with Callout Arrows --- */
+
+/* --- MOBILE STYLES (Screen width <= 768px) --- */
+
+@media (max-width: 768px) {
+  /* Stack items vertically on mobile */
+  .feature-spotlight {
+    flex-direction: column !important;
+  }
+
+  /* This is the key fix. It targets BOTH left and right aligned spotlights
+     with a single, powerful rule that ONLY applies on mobile. */
+  .feature-spotlight.left .feature-callout::before,
+  .feature-spotlight.right .feature-callout::before {
+    /* Position the arrow at the top center */
+    top: -11px; 
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto; /* Reset right property from desktop style */
+
+    /* Explicitly define a clean, upward-pointing triangle shape */
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--border) transparent;
+  }
+}
+
+/* --- END: Feature Spotlight Styles --- */

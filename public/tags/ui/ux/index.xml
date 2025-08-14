@@ -37,11 +37,11 @@
       <description>Responsive fast-food brand prototype built with React.js, featuring interactive maps via Leaflet.js, a custom UI/UX, and optimized performance.</description>
     </item>
     <item>
-      <title>Brushstrokes: Skin-Care Products Store Prototype</title>
+      <title>Brushstrokes: Skin-Care E-Commerce Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-prototype-01/</link>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-prototype-01/</guid>
-      <description>A responsive e-commerce prototype for a skin-care brand, built with React.js. Features product listings and detail pages populated from a JSON data source.</description>
+      <description>A case study on the design and development of a responsive e-commerce prototype for a skin-care brand, built with React.js and featuring a JSON-powered product catalog.</description>
     </item>
   </channel>
 </rss>
