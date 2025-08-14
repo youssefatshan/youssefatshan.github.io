@@ -1,48 +1,81 @@
 ---
-title: "Royal Platinum: Financial Services Company Website Design"
+title: "Royal Platinum: Financial Services UI/UX Prototype"
 date: 2023-06-20
 draft: false
-summary: "A sleek and modern UI/UX Website for a financial services company, built with React.js and Tailwind CSS to translate a Figma design into a pixel-perfect, responsive website."
-
-# Tags extracted from your project description
+summary: "A case study on translating a Figma design into a pixel-perfect financial services prototype using React.js and Tailwind CSS, focusing on a clean UI and reusable components."
 tags: ["React", "Tailwind CSS", "Vite", "JavaScript", "UI/UX", "Frontend", "Figma"]
-
-# IMPORTANT: Add a screenshot of the project to this path
+disableShare: true
 cover:
-    image: "/images/projects/RoyalPlatinum_Cover.png"
-    alt: "Homepage of the Royal Platinum financial services website"
-    caption: "The hero section for the Royal Platinum Website."
-    relative: false
-
+  image: "/images/projects/RoyalPlatinum_Cover.png"
+  alt: "Homepage of the Royal Platinum financial services website"
+  caption: "The hero section for the Royal Platinum Website."
+  relative: false
 params:
-    liveUrl: "https://royalplatinum.surge.sh"
-    # repoUrl: "https://github.com/your-username/royal-platinum"
+  liveUrl: "https://royalplatinum.surge.sh"
+  figmaUrl: "https://www.figma.com/design/TZvj0VEcynmuhjf4M13y32/Royal-Platinum?node-id=0-1&t=17t6uyoRqLzolWir-1"
 ---
 
-Royal Platinum is a sleek, modern UI/UX Website for a financial services company, built as a fully responsive single-page application. This template project was focused on faithfully translating a professional Figma design into a high-performance website, emphasizing a clean component structure and pixel-perfect styling with Tailwind CSS.
+[← Back to Projects](/projects/)
 
-## 🛠️ Tech Stack
-
-* **Core Framework:** React.js
-* **Styling:** Tailwind CSS
-* **Build Tool:** Vite
-* **Language:** JavaScript (ES6+)
-
-## ✨ Key Features
-
-* **🎨 Pixel-Perfect Design:** Meticulously crafted to match the source Figma design, featuring high-quality images, elegant gradients, and a clean, dark-themed UI that creates a professional and trustworthy feel.
-* **🧱 Reusable Components:** Built on a foundation of reusable components for business statistics, features, client testimonials, and more, ensuring a clean and maintainable codebase.
-* **📱 Fully Responsive:** Optimized for all devices with a mobile-first approach. The navigation seamlessly collapses into a toggleable menu on smaller screens for an intuitive mobile experience.
-* **🚀 Efficient Workflow:** Developed using the lightning-fast Vite build tool for a minimal dependency footprint and rapid development lifecycle.
-* **📈 Centralized Data:** All static content, such as navigation links and feature descriptions, is managed in a central constants file, making the site easy to update and maintain.
-
-## 💡 Project Goal
-
-The primary goal of this project was to demonstrate the ability to take a high-fidelity design from Figma and translate it into a fully functional, responsive, and aesthetically pleasing web application. It serves as a strong portfolio piece showcasing modern frontend development practices, a keen eye for UI/UX detail, and mastery of React.js and Tailwind CSS.
+# Royal Platinum: Financial Services UI/UX Prototype
+### Translating a high-fidelity Figma design into a pixel-perfect, responsive web application.
 
 ---
 
-## 🚀 View the Project
+### Overview: The Challenge
 
-* **Live Website:** [royalplatinum.surge.sh](https://royalplatinum.surge.sh)
-* **Source Code:** The GitHub repository for this project is private to respect client confidentiality. Access can be provided upon request.
+The financial services industry demands a digital presence that is both modern and trustworthy. The challenge was to take a professional Figma design and meticulously translate it into a high-performance, fully responsive website. The goal was to demonstrate a strong command of modern frontend practices, from building a scalable component architecture to implementing pixel-perfect styling with Tailwind CSS.
+
+[Live Demo](https://royalplatinum.surge.sh) &nbsp; | &nbsp; **[GitHub Repo (Private)]** &nbsp; | &nbsp; [View the Figma Design](https://www.figma.com/design/TZvj0VEcynmuhjf4M13y32/Royal-Platinum?node-id=0-1&t=17t6uyoRqLzolWir-1)
+
+---
+
+## 🎯 Key Features & Tech Stack
+
+This project was built from the ground up using a cutting-edge stack to deliver a fast, modern, and maintainable website.
+
+* **Pixel-Perfect Styling:** Utilized **Tailwind CSS** to precisely implement the design's intricate details, including elegant gradients and a clean, dark-themed UI that creates a professional feel.
+* **Component-Based Architecture:** Built with a foundation of independent, reusable **React components** for every section, ensuring the codebase is organized, scalable, and easy to debug.
+* **Efficient Workflow:** Developed using the lightning-fast **Vite** build tool for a minimal dependency footprint and rapid development lifecycle.
+* **Centralized Data:** All static content is managed in a central constants file, making the site easy to update and maintain.
+
+---
+
+## 🖼️ The Live Product in Action
+
+Here are some key features of the final deployed website, showcasing how the Figma design was translated into a functional and user-centric experience.
+
+{{< feature-spotlight title="Data-Driven Hero Section" img="/images/projects/RoyalPlatinum_Hero.png" align="left" >}}
+The hero section immediately establishes trust by displaying key business statistics. The clean layout, combined with a strong call-to-action, is designed to convert visitors by highlighting the company's success.
+{{< /feature-spotlight >}}
+
+{{< feature-spotlight title="Clear Call-to-Action" img="/images/projects/RoyalPlatinum_CTA.png" align="right" >}}
+A dedicated call-to-action (CTA) section is strategically placed to guide users toward the next step. The simple, direct language and prominent button are designed to maximize engagement and lead generation.
+{{< /feature-spotlight >}}
+
+{{< feature-spotlight title="Social Proof with Client Logos" img="/images/projects/RoyalPlatinum_Clients.png" align="left" >}}
+To build credibility, a section showcasing logos of trusted clients is included. This form of social proof is a powerful tool in the financial industry to assure potential customers of the company's reputation.
+{{< /feature-spotlight >}}
+
+{{< feature-spotlight title="Intuitive Mobile Navigation" img="/images/projects/RoyalPlatinum_Mobile_Menu.png" align="right" width="200px" >}}
+The site is fully responsive. On mobile, the navigation collapses into a clean and intuitive slide-out menu, ensuring a flawless and professional user experience for visitors on any device.
+{{< /feature-spotlight >}}
+
+---
+
+## 🎨 Design & UI/UX Process
+
+The primary goal was to translate a professional Figma design into a functional website, focusing on user-centric principles to enhance usability and trust.
+
+* **Audience:** Individuals and businesses seeking modern financial services.
+* **Color Palette:** A professional dark theme with vibrant blue and green gradients to convey both trustworthiness and innovation.
+* **Typography:** A clean, modern sans-serif font was used for its excellent readability and professional appearance.
+
+#### UI Mockups
+These are the final mockups that guided the development process.
+
+| Desktop UI | Mobile UI |
+|:---:|:---:|
+| ![Desktop UI](/images/projects/RoyalPlatinum_MacBook_Pro_1.png) | ![Mobile UI](/images/projects/RoyalPlatinum_iPhone_X_1.png) |
+
+---

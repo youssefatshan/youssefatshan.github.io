@@ -19,18 +19,18 @@
 &lt;p&gt;At its core, Tailwind embraces a &lt;strong&gt;utility-first&lt;/strong&gt; approach. Instead of pre-built components like buttons or cards, you compose styles using small, atomic classes directly in your HTML—e.g., &lt;code&gt;bg-blue-500&lt;/code&gt;, &lt;code&gt;px-4&lt;/code&gt;, and &lt;code&gt;rounded-lg&lt;/code&gt;. This approach dramatically accelerates prototyping, eliminates the need for custom CSS files, and fosters a consistent design system.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Cyber Moon: A Fictional Tech Startup Prototype</title>
+      <title>Cyber Moon: Fictional Tech Startup Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-prototype-012/</link>
-      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-prototype-012/</guid>
-      <description>A responsive prototype for a fictional tech startup, showcasing component-based architecture with Next.js, responsive design with Tailwind CSS, and elegant scroll-based animations.</description>
+      <description>A complete case study on designing and developing a responsive, brand-focused tech startup prototype with Next.js and Tailwind CSS, featuring dark mode and scroll-based animations.</description>
     </item>
     <item>
-      <title>Royal Platinum: Financial Services Company Website Design</title>
+      <title>Royal Platinum: Financial Services UI/UX Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-company-02/</guid>
-      <description>A sleek and modern UI/UX Website for a financial services company, built with React.js and Tailwind CSS to translate a Figma design into a pixel-perfect, responsive website.</description>
+      <description>A case study on translating a Figma design into a pixel-perfect financial services prototype using React.js and Tailwind CSS, focusing on a clean UI and reusable components.</description>
     </item>
   </channel>
 </rss>

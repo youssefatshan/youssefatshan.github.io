@@ -6,14 +6,14 @@
     <description>Recent content in React on Youzarsifya7</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Jul 2025 11:20:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cyber Moon: A Fictional Tech Startup Prototype</title>
+      <title>Cyber Moon: Fictional Tech Startup Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-prototype-012/</link>
-      <pubDate>Sun, 13 Jul 2025 11:20:03 +0000</pubDate>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-prototype-012/</guid>
-      <description>A responsive prototype for a fictional tech startup, showcasing component-based architecture with Next.js, responsive design with Tailwind CSS, and elegant scroll-based animations.</description>
+      <description>A complete case study on designing and developing a responsive, brand-focused tech startup prototype with Next.js and Tailwind CSS, featuring dark mode and scroll-based animations.</description>
     </item>
     <item>
       <title>React.js: The Front-End Powerhouse You Need in 2025</title>
@@ -29,21 +29,21 @@
       <link>http://localhost:1313/projects/ya7-project-company-01/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-company-01/</guid>
-      <description>Developed a sleek and modern corporate website for a fiber optics and network solutions provider, designed to highlight their technical expertise and elevate their digital presence.</description>
+      <description>A complete case study on designing and developing a modern, responsive corporate website for a leading Syrian fiber optic solutions provider, built with React.js and Vite.</description>
     </item>
     <item>
-      <title>Royal Platinum: Financial Services Company Website Design</title>
+      <title>Royal Platinum: Financial Services UI/UX Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-company-02/</guid>
-      <description>A sleek and modern UI/UX Website for a financial services company, built with React.js and Tailwind CSS to translate a Figma design into a pixel-perfect, responsive website.</description>
+      <description>A case study on translating a Figma design into a pixel-perfect financial services prototype using React.js and Tailwind CSS, focusing on a clean UI and reusable components.</description>
     </item>
     <item>
-      <title>OllieBites: A Fast Food Chain Website Prototype</title>
+      <title>OllieBites: Fast Food Chain Website Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-prototype-002/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-prototype-002/</guid>
-      <description>A fully responsive prototype for a fast-food brand, designed and developed from scratch. Features interactive maps with Leaflet.js and a complete custom UI/UX design.</description>
+      <description>Responsive fast-food brand prototype built with React.js, featuring interactive maps via Leaflet.js, a custom UI/UX, and optimized performance.</description>
     </item>
     <item>
       <title>Brushstrokes: Skin-Care Products Store Prototype</title>

@@ -50,13 +50,6 @@
 &lt;p&gt;React.js هي مكتبة JavaScript مفتوحة المصدر تُستخدم لبناء واجهات المستخدم، خاصة لتطبيقات الصفحة الواحدة. فلسفتها الأساسية هي بنية المكونات، مما يسمح للمطورين ببناء أجزاء واجهة منفصلة وتجميعها معاً.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>أفضل موقع لي</title>
-      <link>http://localhost:1313/ar/blog/posts/my-best-website/</link>
-      <pubDate>Wed, 12 Feb 2025 08:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/ar/blog/posts/my-best-website/</guid>
-      <description>&lt;p&gt;موقعي الشخصي&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>رويال بلاتينوم: تصميم موقع لشركة خدمات مالية</title>
       <link>http://localhost:1313/ar/projects/ya7-project-company-02/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>

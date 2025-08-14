@@ -315,3 +315,38 @@ h1, h2, h3, h4, h5, h6, .post-title {
 }
 
 /* Ending: Apply Custom Arabic Font --- */
+
+/* --- Feature Spotlight with Callout Arrows --- */
+
+.feature-callout {
+    position: relative;
+    background-color: var(--entry);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+}
+
+/* This creates the triangle/arrow shape */
+.feature-callout::before {
+    content: '';
+    position: absolute;
+    top: 30px; /* Adjust vertical position of the arrow */
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+/* Style for arrows when text is on the RIGHT (image on the left) */
+.feature-spotlight.left .feature-callout::before {
+    left: -10px; /* Position arrow on the left side of the box */
+    border-right: 10px solid var(--border);
+}
+
+/* Style for arrows when text is on the LEFT (image on the right) */
+.feature-spotlight.right .feature-callout::before {
+    right: -10px; /* Position arrow on the right side of the box */
+    border-left: 10px solid var(--border);
+}
+
+/* --- ENDED: Feature Spotlight with Callout Arrows --- */

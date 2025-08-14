@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/reactstrap/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OllieBites: A Fast Food Chain Website Prototype</title>
+      <title>OllieBites: Fast Food Chain Website Prototype</title>
       <link>http://localhost:1313/projects/ya7-project-prototype-002/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ya7-project-prototype-002/</guid>
-      <description>A fully responsive prototype for a fast-food brand, designed and developed from scratch. Features interactive maps with Leaflet.js and a complete custom UI/UX design.</description>
+      <description>Responsive fast-food brand prototype built with React.js, featuring interactive maps via Leaflet.js, a custom UI/UX, and optimized performance.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,25 @@
+<div class="feature-spotlight {{ .Get "align" }}" 
+     style="display: flex; align-items: center; gap: 2rem; margin: 3rem 0;
+            flex-direction: {{ if eq (.Get "align") "right" }}row-reverse{{ else }}row{{ end }};">
+    
+    <!-- Image Section -->
+    <div class="feature-image" style="flex: 1.5; display: flex; justify-content: center;">
+        <img src="{{ .Get "img" | relURL }}" 
+             alt="{{ .Get "title" }}" 
+             style="width: {{ with .Get "width" }}{{ . }}{{ else }}100%{{ end }};
+                    border-radius: 8px; 
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Text Callout Section -->
+    <div class="feature-callout" style="flex: 1;">
+        <div class="feature-text">
+            <h4 style="font-family: 'Roboto', sans-serif; font-weight: 700; margin-bottom: 0.5rem;">
+                {{ .Get "title" }}
+            </h4>
+            <p style="font-size: 0.9rem; color: var(--secondary);">
+                {{ .Inner | markdownify }}
+            </p>
+        </div>
+    </div>
+</div>
